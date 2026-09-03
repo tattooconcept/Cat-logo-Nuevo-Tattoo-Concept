@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actualizador de Stock - Tattoo Concept</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; padding: 40px 20px; background: #f8fafc; color: #0f172a; margin: 0; }
+  .box { background: white; padding: 30px; border-radius: 12px; max-width: 500px; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; text-align: center; }
+  h2 { margin-top: 0; color: #0f172a; }
+  p { font-size: 0.9rem; color: #64748b; margin-bottom: 20px; }
+  label { display: block; text-align: left; font-size: 0.85rem; font-weight: bold; margin-bottom: 5px; color: #334155; }
+  input[type="text"] { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 0.9rem; }
+  input[type="file"] { width: 100%; margin-bottom: 20px; }
+  button { background: #10b981; color: white; border: none; padding: 12px 20px; font-size: 0.95rem; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; transition: background 0.2s; }
+  button:hover { background: #059669; }
+  #log { margin-top: 20px; font-size: 0.85rem; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Sincronizar Stock</h2>
+  <p>Sube el reporte descargado de Alegra para actualizar las existencias en el catálogo web.</p>
+  
+  <label for="ghToken">Token Personal de GitHub:</label>
+  <input type="text" id="ghToken" placeholder="Pega aquí tu token (ghp_...)">
+  
+  <label for="excelFile">Archivo de Inventario (Excel / CSV):</label>
+  <input type="file" id="excelFile" accept=".xlsx, .xls, .csv"><br>
+  
+  <button onclick="procesarExcel()">Cargar y Sincronizar Web</button>
+
+  <div id="log"></div>
+</div>
+
+<script src="products.js"></script>
+<script>
+// Recordar el token localmente para no tener que pegarlo cada vez
+document.getElementById('ghToken').value = localStorage.getItem('tattoo_gh_token') || '';
+
+async function procesarExcel() {
+  const token = document.getElementById('ghToken').value.trim();
+  const fileInput = document.getElementById('excelFile');
+  const log = document.getElementById('log');
+
+  if(!token) return alert('Por favor ingresa tu Token de GitHub.');
+  if(!fileInput.files.length) return alert('Por favor selecciona el archivo Excel de Alegra.');
+
+  localStorage.setItem('tattoo_gh_token', token);
+  log.style.color = '#0284c7';
+  log.textContent = 'Leyendo archivo de inventario...';
+
+  const file = fileInput.files[0];
+  const reader = new FileReader();
+
+  reader.onload = async function(e) {
+    try {
+      const data = new Uint8Array(e.target.result);
+      const workbook = XLSX.read(data, {type: 'array'});
+      const sheet = workbook.Sheets[workbook.SheetNames[0]];
+      const json = XLSX.utils.sheet_to_json(sheet);
+
+      // Mapear existencias por SKU / Referencia
+      let stockMap = {};
+      json.forEach(row => {
+        const sku = row['Referencia'] || row['referencia'] || row['SKU'] || row['Item'];
+        const cant = row['Cantidad'] || row['cantidad'] || row['Stock'] || 0;
+        if(sku) stockMap[String(sku).trim()] = Number(cant);
+      });
+
+      // Actualizar la base de datos de productos local
+      let actualizados = 0;
+      for(let sec in DB) {
+        for(let brand in DB[sec]) {
+          DB[sec][brand].forEach(prod => {
+            if(stockMap[prod.s] !== undefined) {
+              prod.stock = stockMap[prod.s];
+              actualizados++;
+            }
+          });
+        }
+      }
+
+      log.textContent = `Actualizados ${actualizados} productos. Subiendo cambios a GitHub...`;
+
+      // Formatear el contenido de products.js
+      const nuevoContent = "var BRAND_INFO = " + JSON.stringify(BRAND_INFO, null, 2) + ";\n\nvar DB = " + JSON.stringify(DB, null, 2) + ";";
+
+      const repoPath = 'Cat-logo-Nuevo-Tattoo-Concept';
+      const user = 'tattooconcept';
+      const fileUrl = `https://api.github.com/repos/${user}/${repoPath}/contents/products.js`;
+
+      // Obtener información y SHA del archivo en GitHub
+      const fileInfoResp = await fetch(fileUrl, { headers: { Authorization: `token ${token}` } });
+      if(!fileInfoResp.ok) throw new Error('Token inválido o repositorio no encontrado.');
+      
+      const fileInfo = await fileInfoResp.json();
+
+      // Guardar cambios directamente en products.js
+      const response = await fetch(fileUrl, {
+        method: 'PUT',
+        headers: {
+          Authorization: `token ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: 'Actualización automática de stock desde Excel Alegra',
+          content: btoa(unescape(encodeURIComponent(nuevoContent))),
+          sha: fileInfo.sha
+        })
+      });
+
+      if(response.ok) {
+        log.style.color = '#16a34a';
+        log.textContent = '¡Éxito! El stock del catálogo se ha actualizado correctamente en GitHub Pages.';
+      } else {
+        throw new Error('No se pudo guardar la actualización en GitHub.');
+      }
+    } catch(err) {
+      log.style.color = '#dc2626';
+      log.textContent = 'Error: ' + err.message;
+    }
+  };
+
+  reader.readAsArrayBuffer(file);
+}
+</script>
+</body>
+</html>
