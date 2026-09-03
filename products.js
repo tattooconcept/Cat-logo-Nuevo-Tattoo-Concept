@@ -16,75 +16,3155 @@ var BRAND_INFO = {
 };
 
 var DB = {
-  cartuchos: {
+  "cartuchos": {
     "Ilux": [
-      {n:"Cartuchos Ilux 0801RLHS",s:"ACPR071",p:3750,m:3150},{n:"Cartuchos Ilux 0803RLHS",s:"ACPR018",p:3750,m:3150},{n:"Cartuchos Ilux 1003RL",s:"ACPR019",p:3750,m:3150},{n:"Cartuchos Ilux 1005CM",s:"ACPR025",p:3750,m:3150},{n:"Cartuchos Ilux 1005RL",s:"ACPR020",p:3750,m:3150},{n:"Cartuchos Ilux 1007CM",s:"ACPR026",p:3750,m:3250},{n:"Cartuchos Ilux 1007M",s:"ACPR034",p:3750,m:3250},{n:"Cartuchos Ilux 1007RL",s:"ACPR021",p:3750,m:3250},{n:"Cartuchos Ilux 1009CM",s:"ACPR027",p:3750,m:3250},{n:"Cartuchos Ilux 1009M",s:"ACPR035",p:3750,m:3250},{n:"Cartuchos Ilux 1009RL",s:"ACPR022",p:3750,m:3250},{n:"Cartuchos Ilux 1011CM",s:"ACPR028",p:3750,m:3500},{n:"Cartuchos Ilux 1011M",s:"ACPR036",p:3750,m:3500},{n:"Cartuchos Ilux 1011RL",s:"ACPR023",p:3750,m:3500},{n:"Cartuchos Ilux 1013CM",s:"ACPR029",p:3750,m:3500},{n:"Cartuchos Ilux 1013M",s:"ACPR037",p:3750,m:3500},{n:"Cartuchos Ilux 1014RL",s:"ACPR024",p:3750,m:3500},{n:"Cartuchos Ilux 1015CM",s:"ACPR030",p:3750,m:3500},{n:"Cartuchos Ilux 1015M",s:"ACPR038",p:3750,m:3500},{n:"Cartuchos Ilux 1017CM",s:"ACPR031",p:3750,m:3700},{n:"Cartuchos Ilux 1023CM",s:"ACPR032",p:4250,m:3800},{n:"Cartuchos Ilux 1027CM",s:"ACPR033",p:4250,m:3800},{n:"Cartuchos Ilux 1201RL",s:"ACPR017",p:3750,m:3150},{n:"Cartuchos Ilux 1205RS",s:"ACPR040",p:3750,m:3150},{n:"Cartuchos Ilux 1207RS",s:"ACPR041",p:3750,m:3150},{n:"Cartuchos Ilux 1209RS",s:"ACPR042",p:3750,m:3250},{n:"Cartuchos Ilux 1211RS",s:"ACPR077",p:3750,m:3500},{n:"Cartuchos Ilux 1214RS",s:"ACPR043",p:3750,m:3500},{n:"Cartuchos Ilux 1239CM x8",s:"ACWJ134",p:10000,m:9625},{n:"Cartuchos Ilux 1249CM x8",s:"ACWJ135",p:10625,m:9625}
+      {
+        "n": "Cartuchos Ilux 0801RLHS",
+        "s": "ACPR071",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 0803RLHS",
+        "s": "ACPR018",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1003RL",
+        "s": "ACPR019",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1005CM",
+        "s": "ACPR025",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1005RL",
+        "s": "ACPR020",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1007CM",
+        "s": "ACPR026",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1007M",
+        "s": "ACPR034",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1007RL",
+        "s": "ACPR021",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1009CM",
+        "s": "ACPR027",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1009M",
+        "s": "ACPR035",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1009RL",
+        "s": "ACPR022",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1011CM",
+        "s": "ACPR028",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1011M",
+        "s": "ACPR036",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1011RL",
+        "s": "ACPR023",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1013CM",
+        "s": "ACPR029",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1013M",
+        "s": "ACPR037",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1014RL",
+        "s": "ACPR024",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1015CM",
+        "s": "ACPR030",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1015M",
+        "s": "ACPR038",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1017CM",
+        "s": "ACPR031",
+        "p": 3750,
+        "m": 3700,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1023CM",
+        "s": "ACPR032",
+        "p": 4250,
+        "m": 3800,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1027CM",
+        "s": "ACPR033",
+        "p": 4250,
+        "m": 3800,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1201RL",
+        "s": "ACPR017",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1205RS",
+        "s": "ACPR040",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1207RS",
+        "s": "ACPR041",
+        "p": 3750,
+        "m": 3150,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1209RS",
+        "s": "ACPR042",
+        "p": 3750,
+        "m": 3250,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1211RS",
+        "s": "ACPR077",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1214RS",
+        "s": "ACPR043",
+        "p": 3750,
+        "m": 3500,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1239CM x8",
+        "s": "ACWJ134",
+        "p": 10000,
+        "m": 9625,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ilux 1249CM x8",
+        "s": "ACWJ135",
+        "p": 10625,
+        "m": 9625,
+        "stock": 0
+      }
     ],
     "Ronin": [
-      {n:"Cartuchos Ronin 0803RLHS",s:"ACPR070",p:3150,m:2750},{n:"Cartuchos Ronin 1003RL",s:"ACPR044",p:3150,m:2750},{n:"Cartuchos Ronin 1005CM",s:"ACPR061",p:3150,m:2750},{n:"Cartuchos Ronin 1005RL",s:"ACPR045",p:3150,m:2750},{n:"Cartuchos Ronin 1007CM",s:"ACPR062",p:3150,m:2750},{n:"Cartuchos Ronin 1007M",s:"ACPR046",p:3150,m:2750},{n:"Cartuchos Ronin 1007RL",s:"ACPR047",p:3150,m:2750},{n:"Cartuchos Ronin 1009CM",s:"ACPR063",p:3150,m:2750},{n:"Cartuchos Ronin 1009M",s:"ACPR048",p:3150,m:2750},{n:"Cartuchos Ronin 1009RL",s:"ACPR049",p:3150,m:2750},{n:"Cartuchos Ronin 1011CM",s:"ACPR064",p:3150,m:2750},{n:"Cartuchos Ronin 1011M",s:"ACPR050",p:3150,m:2750},{n:"Cartuchos Ronin 1011RL",s:"ACPR051",p:3150,m:2750},{n:"Cartuchos Ronin 1013CM",s:"ACPR065",p:3150,m:2750},{n:"Cartuchos Ronin 1013M",s:"ACPR052",p:3150,m:2750},{n:"Cartuchos Ronin 1014RL",s:"ACPR053",p:3150,m:2750},{n:"Cartuchos Ronin 1015CM",s:"ACPR066",p:3150,m:2750},{n:"Cartuchos Ronin 1015M",s:"ACPR054",p:3150,m:2750},{n:"Cartuchos Ronin 1017CM",s:"ACPR067",p:3150,m:2750},{n:"Cartuchos Ronin 1017M",s:"ACPR055",p:3150,m:2750},{n:"Cartuchos Ronin 1023CM",s:"ACPR068",p:3150,m:2750},{n:"Cartuchos Ronin 1023M",s:"ACPR056",p:3150,m:2750},{n:"Cartuchos Ronin 1027CM",s:"ACPR069",p:3150,m:2750},{n:"Cartuchos Ronin 1205RS",s:"ACPR057",p:3150,m:2750},{n:"Cartuchos Ronin 1207RS",s:"ACPR058",p:3150,m:2750},{n:"Cartuchos Ronin 1209RS",s:"ACPR059",p:3150,m:2750},{n:"Cartuchos Ronin 1211RS",s:"ACWJ175",p:3150,m:2750},{n:"Cartuchos Ronin 1214RS",s:"ACPR060",p:3150,m:2750}
+      {
+        "n": "Cartuchos Ronin 0803RLHS",
+        "s": "ACPR070",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1003RL",
+        "s": "ACPR044",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1005CM",
+        "s": "ACPR061",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1005RL",
+        "s": "ACPR045",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1007CM",
+        "s": "ACPR062",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1007M",
+        "s": "ACPR046",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1007RL",
+        "s": "ACPR047",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1009CM",
+        "s": "ACPR063",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1009M",
+        "s": "ACPR048",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1009RL",
+        "s": "ACPR049",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1011CM",
+        "s": "ACPR064",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1011M",
+        "s": "ACPR050",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1011RL",
+        "s": "ACPR051",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1013CM",
+        "s": "ACPR065",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1013M",
+        "s": "ACPR052",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1014RL",
+        "s": "ACPR053",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1015CM",
+        "s": "ACPR066",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1015M",
+        "s": "ACPR054",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1017CM",
+        "s": "ACPR067",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1017M",
+        "s": "ACPR055",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1023CM",
+        "s": "ACPR068",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1023M",
+        "s": "ACPR056",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1027CM",
+        "s": "ACPR069",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1205RS",
+        "s": "ACPR057",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1207RS",
+        "s": "ACPR058",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1209RS",
+        "s": "ACPR059",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1211RS",
+        "s": "ACWJ175",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos Ronin 1214RS",
+        "s": "ACPR060",
+        "p": 3150,
+        "m": 2750,
+        "stock": 0
+      }
     ],
     "WJX": [
-      {n:"Cartuchos WJX 0603RL",s:"ACWJ163",p:4000,m:3200},{n:"Cartuchos WJX 0803RL",s:"ACWJ094",p:4000,m:3200},{n:"Cartuchos WJX 0805RL",s:"ACWJ162",p:4000,m:3200},{n:"Cartuchos WJX 1001RL",s:"ACWJ093",p:4000,m:3200},{n:"Cartuchos WJX 1003RL",s:"ACWJ095",p:4000,m:3200},{n:"Cartuchos WJX 1005RL",s:"ACWJ096",p:4000,m:3200},{n:"Cartuchos WJX 1007M",s:"ACWJ164",p:4000,m:3300},{n:"Cartuchos WJX 1007RL",s:"ACWJ097",p:4000,m:3300},{n:"Cartuchos WJX 1007RM",s:"ACWJ101",p:4000,m:3300},{n:"Cartuchos WJX 1007RS",s:"ACWJ109",p:4000,m:3300},{n:"Cartuchos WJX 1009M",s:"ACWJ165",p:4000,m:3300},{n:"Cartuchos WJX 1009RL",s:"ACWJ098",p:4000,m:3300},{n:"Cartuchos WJX 1009RM",s:"ACWJ102",p:4000,m:3300},{n:"Cartuchos WJX 1009RS",s:"ACWJ110",p:4000,m:3300},{n:"Cartuchos WJX 1011M",s:"ACWJ166",p:4000,m:3600},{n:"Cartuchos WJX 1011RL",s:"ACWJ099",p:4000,m:3600},{n:"Cartuchos WJX 1011RM",s:"ACWJ103",p:4000,m:3600},{n:"Cartuchos WJX 1011RS",s:"ACWJ111",p:4000,m:3600},{n:"Cartuchos WJX 1013M",s:"ACWJ167",p:4000,m:3600},{n:"Cartuchos WJX 1013RM",s:"ACWJ104",p:4000,m:3600},{n:"Cartuchos WJX 1014RL",s:"ACWJ100",p:4000,m:3600},{n:"Cartuchos WJX 1014RS",s:"ACWJ112",p:4000,m:3600},{n:"Cartuchos WJX 1015M",s:"ACWJ168",p:4000,m:3600},{n:"Cartuchos WJX 1015RM",s:"ACWJ105",p:4000,m:3600},{n:"Cartuchos WJX 1017M",s:"ACWJ176",p:4250,m:3750},{n:"Cartuchos WJX 1017RM",s:"ACWJ106",p:4250,m:3750},{n:"Cartuchos WJX 1019RM",s:"ACWJ131",p:4250,m:3850},{n:"Cartuchos WJX 1021RM",s:"ACWJ132",p:4250,m:3850},{n:"Cartuchos WJX 1023RM",s:"ACWJ107",p:4250,m:3850},{n:"Cartuchos WJX 1025RM",s:"ACWJ133",p:4500,m:4200},{n:"Cartuchos WJX 1027RM",s:"ACWJ108",p:4500,m:4100},{n:"Cartuchos WJX 1041M1 x10",s:"ACWJ113",p:10000,m:7600},{n:"Cartuchos WJX 1041M2 x10",s:"ACWJ114",p:10000,m:7600},{n:"Cartuchos WJX 1041RM1 x10",s:"ACWJ115",p:10000,m:7600},{n:"Cartuchos WJX 1041RM2 x10",s:"ACWJ116",p:10000,m:7600},{n:"Cartuchos WJX 1049M1 x10",s:"ACWJ117",p:10000,m:7600},{n:"Cartuchos WJX 1049M2 x10",s:"ACWJ118",p:10000,m:7600},{n:"Cartuchos WJX 1049RM1 x10",s:"ACWJ119",p:10000,m:7600},{n:"Cartuchos WJX 1049RM2 x10",s:"ACWJ120",p:10000,m:7600},{n:"Cartuchos WJX 1235M1 x10",s:"ACWJ121",p:10000,m:7600},{n:"Cartuchos WJX 1235M2 x10",s:"ACWJ122",p:10000,m:7600},{n:"Cartuchos WJX 1235RM1 x10",s:"ACWJ123",p:10000,m:7600},{n:"Cartuchos WJX 1235RM2 x10",s:"ACWJ124",p:10000,m:7600},{n:"Cartuchos WJX 1245M1 x10",s:"ACWJ125",p:10000,m:7600},{n:"Cartuchos WJX 1245M2 x10",s:"ACWJ126",p:10000,m:7600},{n:"Cartuchos WJX 1245RM1 x10",s:"ACWJ127",p:10000,m:7600},{n:"Cartuchos WJX 1245RM2 x10",s:"ACWJ128",p:10000,m:7600}
+      {
+        "n": "Cartuchos WJX 0603RL",
+        "s": "ACWJ163",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 0803RL",
+        "s": "ACWJ094",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 0805RL",
+        "s": "ACWJ162",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1001RL",
+        "s": "ACWJ093",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1003RL",
+        "s": "ACWJ095",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1005RL",
+        "s": "ACWJ096",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1007M",
+        "s": "ACWJ164",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1007RL",
+        "s": "ACWJ097",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1007RM",
+        "s": "ACWJ101",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1007RS",
+        "s": "ACWJ109",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1009M",
+        "s": "ACWJ165",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1009RL",
+        "s": "ACWJ098",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1009RM",
+        "s": "ACWJ102",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1009RS",
+        "s": "ACWJ110",
+        "p": 4000,
+        "m": 3300,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1011M",
+        "s": "ACWJ166",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1011RL",
+        "s": "ACWJ099",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1011RM",
+        "s": "ACWJ103",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1011RS",
+        "s": "ACWJ111",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1013M",
+        "s": "ACWJ167",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1013RM",
+        "s": "ACWJ104",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1014RL",
+        "s": "ACWJ100",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1014RS",
+        "s": "ACWJ112",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1015M",
+        "s": "ACWJ168",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1015RM",
+        "s": "ACWJ105",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1017M",
+        "s": "ACWJ176",
+        "p": 4250,
+        "m": 3750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1017RM",
+        "s": "ACWJ106",
+        "p": 4250,
+        "m": 3750,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1019RM",
+        "s": "ACWJ131",
+        "p": 4250,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1021RM",
+        "s": "ACWJ132",
+        "p": 4250,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1023RM",
+        "s": "ACWJ107",
+        "p": 4250,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1025RM",
+        "s": "ACWJ133",
+        "p": 4500,
+        "m": 4200,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1027RM",
+        "s": "ACWJ108",
+        "p": 4500,
+        "m": 4100,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1041M1 x10",
+        "s": "ACWJ113",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1041M2 x10",
+        "s": "ACWJ114",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1041RM1 x10",
+        "s": "ACWJ115",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1041RM2 x10",
+        "s": "ACWJ116",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1049M1 x10",
+        "s": "ACWJ117",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1049M2 x10",
+        "s": "ACWJ118",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1049RM1 x10",
+        "s": "ACWJ119",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1049RM2 x10",
+        "s": "ACWJ120",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1235M1 x10",
+        "s": "ACWJ121",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1235M2 x10",
+        "s": "ACWJ122",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1235RM1 x10",
+        "s": "ACWJ123",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1235RM2 x10",
+        "s": "ACWJ124",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1245M1 x10",
+        "s": "ACWJ125",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1245M2 x10",
+        "s": "ACWJ126",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1245RM1 x10",
+        "s": "ACWJ127",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos WJX 1245RM2 x10",
+        "s": "ACWJ128",
+        "p": 10000,
+        "m": 7600,
+        "stock": 0
+      }
     ],
     "WJX Ultimate": [
-      {n:"WJX Ultimate 0803RL",s:"ACWJ137",p:4000,m:3450},{n:"WJX Ultimate 1001RL",s:"ACWJ136",p:4000,m:3450},{n:"WJX Ultimate 1003RL",s:"ACWJ138",p:4000,m:3450},{n:"WJX Ultimate 1005RL",s:"ACWJ139",p:4000,m:3450},{n:"WJX Ultimate 1007RL",s:"ACWJ140",p:4000,m:3600},{n:"WJX Ultimate 1007RM",s:"ACWJ142",p:4000,m:3600},{n:"WJX Ultimate 1007RS",s:"ACWJ149",p:4000,m:3600},{n:"WJX Ultimate 1009M",s:"ACWJ153",p:4000,m:3600},{n:"WJX Ultimate 1009RL",s:"ACWJ141",p:4000,m:3600},{n:"WJX Ultimate 1009RM",s:"ACWJ143",p:4000,m:3600},{n:"WJX Ultimate 1009RS",s:"ACWJ150",p:4000,m:3600},{n:"WJX Ultimate 1011M",s:"ACWJ154",p:4000,m:3850},{n:"WJX Ultimate 1011RL",s:"ACWJ169",p:4000,m:3850},{n:"WJX Ultimate 1011RM",s:"ACWJ144",p:4000,m:3850},{n:"WJX Ultimate 1011RS",s:"ACWJ151",p:4000,m:3850},{n:"WJX Ultimate 1013M",s:"ACWJ155",p:4000,m:3850},{n:"WJX Ultimate 1013RM",s:"ACWJ145",p:4000,m:3850},{n:"WJX Ultimate 1013RS",s:"ACWJ156",p:4000,m:3850},{n:"WJX Ultimate 1014RL",s:"ACWJ170",p:4000,m:3850},{n:"WJX Ultimate 1014RS",s:"ACWJ152",p:4000,m:3850},{n:"WJX Ultimate 1015M",s:"ACWJ157",p:4000,m:3850},{n:"WJX Ultimate 1015RM",s:"ACWJ146",p:4000,m:3850},{n:"WJX Ultimate 1017RM",s:"ACWJ147",p:4000,m:4000},{n:"WJX Ultimate 1019RM",s:"ACWJ158",p:4250,m:3950},{n:"WJX Ultimate 1021RM",s:"ACWJ159",p:4250,m:3900},{n:"WJX Ultimate 1023RM",s:"ACWJ148",p:4250,m:3900},{n:"WJX Ultimate 1025RM",s:"ACWJ160",p:4250,m:4150},{n:"WJX Ultimate 1027RM",s:"ACWJ161",p:4250,m:4150}
+      {
+        "n": "WJX Ultimate 0803RL",
+        "s": "ACWJ137",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1001RL",
+        "s": "ACWJ136",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1003RL",
+        "s": "ACWJ138",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1005RL",
+        "s": "ACWJ139",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1007RL",
+        "s": "ACWJ140",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1007RM",
+        "s": "ACWJ142",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1007RS",
+        "s": "ACWJ149",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1009M",
+        "s": "ACWJ153",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1009RL",
+        "s": "ACWJ141",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1009RM",
+        "s": "ACWJ143",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1009RS",
+        "s": "ACWJ150",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1011M",
+        "s": "ACWJ154",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1011RL",
+        "s": "ACWJ169",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1011RM",
+        "s": "ACWJ144",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1011RS",
+        "s": "ACWJ151",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1013M",
+        "s": "ACWJ155",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1013RM",
+        "s": "ACWJ145",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1013RS",
+        "s": "ACWJ156",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1014RL",
+        "s": "ACWJ170",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1014RS",
+        "s": "ACWJ152",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1015M",
+        "s": "ACWJ157",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1015RM",
+        "s": "ACWJ146",
+        "p": 4000,
+        "m": 3850,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1017RM",
+        "s": "ACWJ147",
+        "p": 4000,
+        "m": 4000,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1019RM",
+        "s": "ACWJ158",
+        "p": 4250,
+        "m": 3950,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1021RM",
+        "s": "ACWJ159",
+        "p": 4250,
+        "m": 3900,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1023RM",
+        "s": "ACWJ148",
+        "p": 4250,
+        "m": 3900,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1025RM",
+        "s": "ACWJ160",
+        "p": 4250,
+        "m": 4150,
+        "stock": 0
+      },
+      {
+        "n": "WJX Ultimate 1027RM",
+        "s": "ACWJ161",
+        "p": 4250,
+        "m": 4150,
+        "stock": 0
+      }
     ],
     "Radiant": [
-      {n:"Cartucho Radiant 1003RL",s:"ACRA078",p:65000,m:45000},{n:"Cartucho Radiant 1005RL",s:"ACRA079",p:65000,m:45000},{n:"Cartucho Radiant 1007CM",s:"ACRA080",p:3250,m:2250},{n:"Cartucho Radiant 1007RL",s:"ACRA081",p:65000,m:45000},{n:"Cartucho Radiant 1009CM",s:"ACRA082",p:3250,m:2250},{n:"Cartucho Radiant 1009RL",s:"ACRA083",p:65000,m:45000},{n:"Cartucho Radiant 1011CM",s:"ACRA084",p:3250,m:2250},{n:"Cartucho Radiant 1011RL",s:"ACRA085",p:65000,m:45000},{n:"Cartucho Radiant 1013CM",s:"ACRA086",p:3250,m:2250},{n:"Cartucho Radiant 1014RL",s:"ACRA087",p:3250,m:2250},{n:"Cartucho Radiant 1015CM",s:"ACRA088",p:3250,m:2250},{n:"Cartucho Radiant 1017CM",s:"ACRA089",p:3250,m:2250},{n:"Cartucho Radiant 1023CM",s:"ACRA090",p:65000,m:45000},{n:"Cartucho Radiant 1209RS",s:"ACRA091",p:3250,m:2250},{n:"Cartucho Radiant 1214RS",s:"ACRA092",p:3250,m:2250}
+      {
+        "n": "Cartucho Radiant 1003RL",
+        "s": "ACRA078",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1005RL",
+        "s": "ACRA079",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1007CM",
+        "s": "ACRA080",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1007RL",
+        "s": "ACRA081",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1009CM",
+        "s": "ACRA082",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1009RL",
+        "s": "ACRA083",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1011CM",
+        "s": "ACRA084",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1011RL",
+        "s": "ACRA085",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1013CM",
+        "s": "ACRA086",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1014RL",
+        "s": "ACRA087",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1015CM",
+        "s": "ACRA088",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1017CM",
+        "s": "ACRA089",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1023CM",
+        "s": "ACRA090",
+        "p": 65000,
+        "m": 45000,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1209RS",
+        "s": "ACRA091",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      },
+      {
+        "n": "Cartucho Radiant 1214RS",
+        "s": "ACRA092",
+        "p": 3250,
+        "m": 2250,
+        "stock": 0
+      }
     ],
     "AVA Arrow": [
-      {n:"AVA Arrow 1003RL x20",s:"ACAV177",p:4000,m:3200},{n:"AVA Arrow 1005RL x20",s:"ACAV178",p:4000,m:3200}
+      {
+        "n": "AVA Arrow 1003RL x20",
+        "s": "ACAV177",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      },
+      {
+        "n": "AVA Arrow 1005RL x20",
+        "s": "ACAV178",
+        "p": 4000,
+        "m": 3200,
+        "stock": 0
+      }
     ],
     "YUE": [
-      {n:"Cartuchos YUE 1003RL x20",s:"ACWJ171",p:4000,m:3450},{n:"Cartuchos YUE 1005RL x20",s:"ACWJ172",p:4000,m:3450},{n:"Cartuchos YUE 1007RL x20",s:"ACWJ173",p:4000,m:3600},{n:"Cartuchos YUE 1009RM x20",s:"ACWJ174",p:4000,m:3600}
+      {
+        "n": "Cartuchos YUE 1003RL x20",
+        "s": "ACWJ171",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos YUE 1005RL x20",
+        "s": "ACWJ172",
+        "p": 4000,
+        "m": 3450,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos YUE 1007RL x20",
+        "s": "ACWJ173",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      },
+      {
+        "n": "Cartuchos YUE 1009RM x20",
+        "s": "ACWJ174",
+        "p": 4000,
+        "m": 3600,
+        "stock": 0
+      }
     ]
   },
-  agujas: {
+  "agujas": {
     "Agujas Tradicionales": [
-      {n:"Agujas 1003RL",s:"ACEX004",p:600},{n:"Agujas 1207M",s:"ACEX012",p:600},{n:"Agujas 1215M",s:"ACEX016",p:600},{n:"7RL D Energy",s:"ENERGY01",p:4500}
+      {
+        "n": "Agujas 1003RL",
+        "s": "ACEX004",
+        "p": 600,
+        "stock": 0
+      },
+      {
+        "n": "Agujas 1207M",
+        "s": "ACEX012",
+        "p": 600,
+        "stock": 0
+      },
+      {
+        "n": "Agujas 1215M",
+        "s": "ACEX016",
+        "p": 600,
+        "stock": 0
+      },
+      {
+        "n": "7RL D Energy",
+        "s": "ENERGY01",
+        "p": 4500
+      }
     ],
     "Agujas Perforacion": [
-      {n:"Agujas Perforacion 14",s:"ACEX002",p:470},{n:"Agujas Perforacion 16",s:"ACEX003",p:470},{n:"Agujas Perforacion 18",s:"ACEX001",p:470}
+      {
+        "n": "Agujas Perforacion 14",
+        "s": "ACEX002",
+        "p": 470,
+        "stock": 0
+      },
+      {
+        "n": "Agujas Perforacion 16",
+        "s": "ACEX003",
+        "p": 470,
+        "stock": 0
+      },
+      {
+        "n": "Agujas Perforacion 18",
+        "s": "ACEX001",
+        "p": 470,
+        "stock": 0
+      }
     ]
   },
-  tintas: {
+  "tintas": {
     "Radiant 1oz": [
-      {n:"Radiant Real Black 1oz",s:"TIRA200",p:46000,m:36000},{n:"Radiant Real Black 8oz",s:"TIRA199",p:100000,m:70000},{n:"Radiant Turbo Black 1oz",s:"TIRA228",p:46000,m:36000},{n:"Radiant Tribal Black 1oz",s:"TIRA226",p:46000,m:36000},{n:"Radiant Super White 1oz",s:"TIRA218",p:46000,m:36000},{n:"Radiant Super White 4oz",s:"TIRA421",p:90000,m:60000},{n:"Radiant Super White 8oz",s:"TIRA423",p:120000,m:90000},{n:"Radiant White 1oz",s:"TIRA232",p:46000,m:36000},{n:"Radiant White 4oz",s:"TIRA422",p:80000,m:60000},{n:"Radiant Mixing White 1oz",s:"TIRA184",p:55000,m:40000},{n:"Radiant Absolute Blue 1oz",s:"TIRA418",p:55000,m:40000},{n:"Radiant Apple Green 1oz",s:"TIRA102",p:55000,m:40000},{n:"Radiant Aquamarin 1oz",s:"TIRA103",p:55000,m:40000},{n:"Radiant Baby Pink 1oz",s:"TIRA105",p:55000,m:40000},{n:"Radiant Bamboo 1oz",s:"TIRA107",p:55000,m:40000},{n:"Radiant Banana 1oz",s:"TIRA108",p:55000,m:40000},{n:"Radiant Blood Red 1oz",s:"TIRA109",p:55000,m:40000},{n:"Radiant Blue 1oz",s:"TIRA111",p:55000,m:40000},{n:"Radiant Bright Orange 1oz",s:"TIRA113",p:55000,m:40000},{n:"Radiant Bright Yellow 1oz",s:"TIRA114",p:55000,m:40000},{n:"Radiant Brown 1oz",s:"TIRA115",p:55000,m:40000},{n:"Radiant Bubblegum Pink 1oz",s:"TIRA116",p:55000,m:40000},{n:"Radiant Camel 1oz",s:"TIRA117",p:55000,m:40000},{n:"Radiant Canary 1oz",s:"TIRA118",p:55000,m:40000},{n:"Radiant Candy 1oz",s:"TIRA120",p:55000,m:40000},{n:"Radiant Celestial 1oz",s:"TIRA121",p:55000,m:40000},{n:"Radiant Cherry 1oz",s:"TIRA122",p:55000,m:40000},{n:"Radiant Chocolate 1oz",s:"TIRA123",p:55000,m:40000},{n:"Radiant Clever Gray 1oz",s:"TIRA124",p:55000,m:40000},{n:"Radiant Coco 1oz",s:"TIRA125",p:55000,m:40000},{n:"Radiant Coffee 1oz",s:"TIRA126",p:55000,m:40000},{n:"Radiant Cool Gray 1oz",s:"TIRA127",p:55000,m:40000},{n:"Radiant Copper 1oz",s:"TIRA128",p:55000,m:40000},{n:"Radiant Corn 1oz",s:"TIRA130",p:55000,m:40000},{n:"Radiant Country Blue 1oz",s:"TIRA131",p:55000,m:40000},{n:"Radiant Crimson Red 1oz",s:"TIRA132",p:55000,m:40000},{n:"Radiant Dark Brown 1oz",s:"TIRA133",p:55000,m:40000},{n:"Radiant Dark Green 1oz",s:"TIRA135",p:55000,m:40000},{n:"Radiant Dark Red 1oz",s:"TIRA134",p:55000,m:40000},{n:"Radiant Deep Burgundy 1oz",s:"TIRA136",p:55000,m:40000},{n:"Radiant Deep Green 1oz",s:"TIRA137",p:55000,m:40000},{n:"Radiant Deep Pink 1oz",s:"TIRA138",p:55000,m:40000},{n:"Radiant Deep Purple 1oz",s:"TIRA141",p:55000,m:40000},{n:"Radiant Deep Red 1oz",s:"TIRA139",p:55000,m:40000},{n:"Radiant Deep Violet 1oz",s:"TIRA140",p:55000,m:40000},{n:"Radiant Dragon Fruit 1oz",s:"TIRA426",p:55000,m:40000},{n:"Radiant Electric 1oz",s:"TIRA143",p:55000,m:40000},{n:"Radiant El Rojo 1oz",s:"TIRA144",p:55000,m:40000},{n:"Radiant Emerald 1oz",s:"TIRA145",p:55000,m:40000},{n:"Radiant Flaming 1oz",s:"TIRA148",p:55000,m:40000},{n:"Radiant Flesh 1oz",s:"TIRA149",p:55000,m:40000},{n:"Radiant Fuschia 1oz",s:"TIRA152",p:55000,m:40000},{n:"Radiant Golden 1oz",s:"TIRA153",p:55000,m:40000},{n:"Radiant Grape 1oz",s:"TIRA154",p:55000,m:40000},{n:"Radiant Gray 1oz",s:"TIRA155",p:55000,m:40000},{n:"Radiant Hibiscus 1oz",s:"TIRA427",p:55000,m:40000},{n:"Radiant Hollywood 1oz",s:"TIRA157",p:55000,m:40000},{n:"Radiant Honey 1oz",s:"TIRA158",p:55000,m:40000},{n:"Radiant Irish Green 1oz",s:"TIRA160",p:55000,m:40000},{n:"Radiant Jasmin 1oz",s:"TIRA326",p:55000,m:40000},{n:"Radiant LA Pink 1oz",s:"TIRA162",p:55000,m:40000},{n:"Radiant Lavender 1oz",s:"TIRA163",p:55000,m:40000},{n:"Radiant Leaf Green 1oz",s:"TIRA164",p:55000,m:40000},{n:"Radiant Lemon Yellow 1oz",s:"TIRA165",p:55000,m:40000},{n:"Radiant Light Red 1oz",s:"TIRA166",p:55000,m:40000},{n:"Radiant Lilac 1oz",s:"TIRA167",p:55000,m:40000},{n:"Radiant Lime 1oz",s:"TIRA168",p:55000,m:40000},{n:"Radiant Lite 1oz",s:"TIRA170",p:55000,m:40000},{n:"Radiant Lollipop 1oz",s:"TIRA171",p:55000,m:40000},{n:"Radiant Magenta 1oz",s:"TIRA173",p:55000,m:40000},{n:"Radiant Malibu Pink 1oz",s:"TIRA175",p:55000,m:40000},{n:"Radiant Mango 1oz",s:"TIRA176",p:55000,m:40000},{n:"Radiant Mauve 1oz",s:"TIRA177",p:55000,m:40000},{n:"Radiant Medium Brown 1oz",s:"TIRA178",p:55000,m:40000},{n:"Radiant Medium Green 1oz",s:"TIRA179",p:55000,m:40000},{n:"Radiant Mexican 1oz",s:"TIRA181",p:55000,m:40000},{n:"Radiant Midnight 1oz",s:"TIRA182",p:55000,m:40000},{n:"Radiant Mint 1oz",s:"TIRA183",p:55000,m:40000},{n:"Radiant Navy Blue 1oz",s:"TIRA185",p:55000,m:40000},{n:"Radiant Nugget 1oz",s:"TIRA186",p:55000,m:40000},{n:"Radiant Olive 1oz",s:"TIRA188",p:55000,m:40000},{n:"Radiant Pale Flesh 1oz",s:"TIRA190",p:55000,m:40000},{n:"Radiant Periwinkle 1oz",s:"TIRA191",p:55000,m:40000},{n:"Radiant Pistacho 1oz",s:"TIRA327",p:55000,m:40000},{n:"Radiant Plum 1oz",s:"TIRA192",p:55000,m:40000},{n:"Radiant Poppy Orange 1oz",s:"TIRA193",p:55000,m:40000},{n:"Radiant Purple 1oz",s:"TIRA195",p:55000,m:40000},{n:"Radiant Purple Haze 1oz",s:"TIRA196",p:55000,m:40000},{n:"Radiant Raspberry 1oz",s:"TIRA198",p:55000,m:40000},{n:"Radiant Reef Green 1oz",s:"TIRA201",p:55000,m:40000},{n:"Radiant Rodeo Red 1oz",s:"TIRA202",p:55000,m:40000},{n:"Radiant Royal Blue 1oz",s:"TIRA203",p:55000,m:40000},{n:"Radiant Salmon 1oz",s:"TIRA204",p:55000,m:40000},{n:"Radiant Scarlet Red 1oz",s:"TIRA206",p:55000,m:40000},{n:"Radiant Seal Brown 1oz",s:"TIRA208",p:55000,m:40000},{n:"Radiant Sharp Gray 1oz",s:"TIRA209",p:55000,m:40000},{n:"Radiant Sienna 1oz",s:"TIRA210",p:55000,m:40000},{n:"Radiant Sky 1oz",s:"TIRA211",p:55000,m:40000},{n:"Radiant Slate Blue 1oz",s:"TIRA212",p:55000,m:40000},{n:"Radiant Slick Gray 1oz",s:"TIRA213",p:55000,m:40000},{n:"Radiant Sly Gray 1oz",s:"TIRA214",p:55000,m:40000},{n:"Radiant Steel Blue 1oz",s:"TIRA216",p:55000,m:40000},{n:"Radiant Sunset Blvd 1oz",s:"TIRA217",p:55000,m:40000},{n:"Radiant Teal 1oz",s:"TIRA220",p:55000,m:40000},{n:"Radiant Tiger Orange 1oz",s:"TIRA223",p:55000,m:40000},{n:"Radiant Tomato 1oz",s:"TIRA225",p:55000,m:40000},{n:"Radiant Violet 1oz",s:"TIRA230",p:55000,m:40000},{n:"Radiant Wineberry 1oz",s:"TIRA234",p:55000,m:40000},{n:"Radiant Yellow Ochre 1oz",s:"TIRA235",p:55000,m:40000}
+      {
+        "n": "Radiant Real Black 1oz",
+        "s": "TIRA200",
+        "p": 46000,
+        "m": 36000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Real Black 8oz",
+        "s": "TIRA199",
+        "p": 100000,
+        "m": 70000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Turbo Black 1oz",
+        "s": "TIRA228",
+        "p": 46000,
+        "m": 36000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Tribal Black 1oz",
+        "s": "TIRA226",
+        "p": 46000,
+        "m": 36000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Super White 1oz",
+        "s": "TIRA218",
+        "p": 46000,
+        "m": 36000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Super White 4oz",
+        "s": "TIRA421",
+        "p": 90000,
+        "m": 60000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Super White 8oz",
+        "s": "TIRA423",
+        "p": 120000,
+        "m": 90000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant White 1oz",
+        "s": "TIRA232",
+        "p": 46000,
+        "m": 36000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant White 4oz",
+        "s": "TIRA422",
+        "p": 80000,
+        "m": 60000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Mixing White 1oz",
+        "s": "TIRA184",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Absolute Blue 1oz",
+        "s": "TIRA418",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Apple Green 1oz",
+        "s": "TIRA102",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Aquamarin 1oz",
+        "s": "TIRA103",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Baby Pink 1oz",
+        "s": "TIRA105",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Bamboo 1oz",
+        "s": "TIRA107",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Banana 1oz",
+        "s": "TIRA108",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Blood Red 1oz",
+        "s": "TIRA109",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Blue 1oz",
+        "s": "TIRA111",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Bright Orange 1oz",
+        "s": "TIRA113",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Bright Yellow 1oz",
+        "s": "TIRA114",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Brown 1oz",
+        "s": "TIRA115",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Bubblegum Pink 1oz",
+        "s": "TIRA116",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Camel 1oz",
+        "s": "TIRA117",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Canary 1oz",
+        "s": "TIRA118",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Candy 1oz",
+        "s": "TIRA120",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Celestial 1oz",
+        "s": "TIRA121",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Cherry 1oz",
+        "s": "TIRA122",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Chocolate 1oz",
+        "s": "TIRA123",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Clever Gray 1oz",
+        "s": "TIRA124",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Coco 1oz",
+        "s": "TIRA125",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Coffee 1oz",
+        "s": "TIRA126",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Cool Gray 1oz",
+        "s": "TIRA127",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Copper 1oz",
+        "s": "TIRA128",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Corn 1oz",
+        "s": "TIRA130",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Country Blue 1oz",
+        "s": "TIRA131",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Crimson Red 1oz",
+        "s": "TIRA132",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Dark Brown 1oz",
+        "s": "TIRA133",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Dark Green 1oz",
+        "s": "TIRA135",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Dark Red 1oz",
+        "s": "TIRA134",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Burgundy 1oz",
+        "s": "TIRA136",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Green 1oz",
+        "s": "TIRA137",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Pink 1oz",
+        "s": "TIRA138",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Purple 1oz",
+        "s": "TIRA141",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Red 1oz",
+        "s": "TIRA139",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Deep Violet 1oz",
+        "s": "TIRA140",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Dragon Fruit 1oz",
+        "s": "TIRA426",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Electric 1oz",
+        "s": "TIRA143",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant El Rojo 1oz",
+        "s": "TIRA144",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Emerald 1oz",
+        "s": "TIRA145",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Flaming 1oz",
+        "s": "TIRA148",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Flesh 1oz",
+        "s": "TIRA149",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Fuschia 1oz",
+        "s": "TIRA152",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Golden 1oz",
+        "s": "TIRA153",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Grape 1oz",
+        "s": "TIRA154",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Gray 1oz",
+        "s": "TIRA155",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Hibiscus 1oz",
+        "s": "TIRA427",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Hollywood 1oz",
+        "s": "TIRA157",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Honey 1oz",
+        "s": "TIRA158",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Irish Green 1oz",
+        "s": "TIRA160",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Jasmin 1oz",
+        "s": "TIRA326",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant LA Pink 1oz",
+        "s": "TIRA162",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lavender 1oz",
+        "s": "TIRA163",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Leaf Green 1oz",
+        "s": "TIRA164",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lemon Yellow 1oz",
+        "s": "TIRA165",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Light Red 1oz",
+        "s": "TIRA166",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lilac 1oz",
+        "s": "TIRA167",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lime 1oz",
+        "s": "TIRA168",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lite 1oz",
+        "s": "TIRA170",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Lollipop 1oz",
+        "s": "TIRA171",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Magenta 1oz",
+        "s": "TIRA173",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Malibu Pink 1oz",
+        "s": "TIRA175",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Mango 1oz",
+        "s": "TIRA176",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Mauve 1oz",
+        "s": "TIRA177",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Medium Brown 1oz",
+        "s": "TIRA178",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Medium Green 1oz",
+        "s": "TIRA179",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Mexican 1oz",
+        "s": "TIRA181",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Midnight 1oz",
+        "s": "TIRA182",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Mint 1oz",
+        "s": "TIRA183",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Navy Blue 1oz",
+        "s": "TIRA185",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Nugget 1oz",
+        "s": "TIRA186",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Olive 1oz",
+        "s": "TIRA188",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Pale Flesh 1oz",
+        "s": "TIRA190",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Periwinkle 1oz",
+        "s": "TIRA191",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Pistacho 1oz",
+        "s": "TIRA327",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Plum 1oz",
+        "s": "TIRA192",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Poppy Orange 1oz",
+        "s": "TIRA193",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Purple 1oz",
+        "s": "TIRA195",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Purple Haze 1oz",
+        "s": "TIRA196",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Raspberry 1oz",
+        "s": "TIRA198",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Reef Green 1oz",
+        "s": "TIRA201",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Rodeo Red 1oz",
+        "s": "TIRA202",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Royal Blue 1oz",
+        "s": "TIRA203",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Salmon 1oz",
+        "s": "TIRA204",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Scarlet Red 1oz",
+        "s": "TIRA206",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Seal Brown 1oz",
+        "s": "TIRA208",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Sharp Gray 1oz",
+        "s": "TIRA209",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Sienna 1oz",
+        "s": "TIRA210",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Sky 1oz",
+        "s": "TIRA211",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Slate Blue 1oz",
+        "s": "TIRA212",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Slick Gray 1oz",
+        "s": "TIRA213",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Sly Gray 1oz",
+        "s": "TIRA214",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Steel Blue 1oz",
+        "s": "TIRA216",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Sunset Blvd 1oz",
+        "s": "TIRA217",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Teal 1oz",
+        "s": "TIRA220",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Tiger Orange 1oz",
+        "s": "TIRA223",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Tomato 1oz",
+        "s": "TIRA225",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Violet 1oz",
+        "s": "TIRA230",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Wineberry 1oz",
+        "s": "TIRA234",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Radiant Yellow Ochre 1oz",
+        "s": "TIRA235",
+        "p": 55000,
+        "m": 40000,
+        "stock": 0
+      }
     ],
     "Dynamic 1oz": [
-      {n:"Dynamic Black 1oz",s:"TIDY010",p:49000,m:38000},{n:"Dynamic Blanco 1oz",s:"TIDY013",p:49000,m:38000},{n:"Dynamic Triple Black 1oz",s:"TIDY008",p:54000,m:42000},{n:"Dynamic Heavy White 1oz",s:"TIDY017",p:40000,m:32000},{n:"Dynamic Bright White 1oz",s:"TIDY416",p:50000,m:40000},{n:"Dynamic Atomic Green 1oz",s:"TIDY407",p:50000,m:40000},{n:"Dynamic Azure Blue 1oz",s:"TIDY403",p:50000,m:40000},{n:"Dynamic Baby Blue 1oz",s:"TIDY404",p:50000,m:40000},{n:"Dynamic Blue 1oz",s:"TIDY001",p:50000,m:40000},{n:"Dynamic Blue Abyss 1oz",s:"TIDY401",p:50000,m:40000},{n:"Dynamic Bombshell 1oz",s:"TIDY410",p:50000,m:40000},{n:"Dynamic Bright Orange 1oz",s:"TIDY387",p:50000,m:40000},{n:"Dynamic Brown 1oz",s:"TIDY412",p:50000,m:40000},{n:"Dynamic Bubble Gum 1oz",s:"TIDY004",p:30000,m:24000},{n:"Dynamic Burgundy Red 1oz",s:"TIDY005",p:30000,m:24000},{n:"Dynamic Canary Yellow 1oz",s:"TIDY006",p:30000,m:24000},{n:"Dynamic Carrot Orange 1oz",s:"TIDY388",p:50000,m:40000},{n:"Dynamic Chinese Red 1oz",s:"TIDY313",p:30000,m:24000},{n:"Dynamic Chocolate 1oz",s:"TIDY411",p:50000,m:40000},{n:"Dynamic Cobalt Blue 1oz",s:"TIDY402",p:50000,m:40000},{n:"Dynamic Crimson Red 1oz",s:"TIDY390",p:50000,m:40000},{n:"Dynamic Dark Blue 1oz",s:"TIDY400",p:50000,m:40000},{n:"Dynamic Dark Green 1oz",s:"TIDY409",p:50000,m:40000},{n:"Dynamic Deep Pink 1oz",s:"TIDY395",p:50000,m:40000},{n:"Dynamic Electric Blue 1oz",s:"TIDY014",p:30000,m:24000},{n:"Dynamic Emerald Green 1oz",s:"TIDY406",p:50000,m:40000},{n:"Dynamic Fire Red 1oz",s:"TIDY015",p:30000,m:24000},{n:"Dynamic Forest Green 1oz",s:"TIDY408",p:50000,m:40000},{n:"Dynamic Golden Yellow 1oz",s:"TIDY016",p:30000,m:24000},{n:"Dynamic Grey 1oz",s:"TIDY413",p:50000,m:40000},{n:"Dynamic Highlighter Yellow 1oz",s:"TIDY384",p:50000,m:40000},{n:"Dynamic Hot Pink 1oz",s:"TIDY019",p:30000,m:24000},{n:"Dynamic Lavender 1oz",s:"TIDY398",p:50000,m:40000},{n:"Dynamic Leaf Green 1oz",s:"TIDY020",p:30000,m:24000},{n:"Dynamic Lemon Yellow 1oz",s:"TIDY021",p:30000,m:24000},{n:"Dynamic Lime Green 1oz",s:"TIDY022",p:30000,m:24000},{n:"Dynamic Magenta 1oz",s:"TIDY023",p:30000,m:24000},{n:"Dynamic Mint 1oz",s:"TIDY405",p:50000,m:40000},{n:"Dynamic Mustard 1oz",s:"TIDY386",p:50000,m:40000},{n:"Dynamic Nude 1oz",s:"TIDY414",p:50000,m:40000},{n:"Dynamic Orange 1oz",s:"TIDY024",p:30000,m:24000},{n:"Dynamic Pink 1oz",s:"TIDY396",p:50000,m:40000},{n:"Dynamic Pure Red 1oz",s:"TIDY393",p:50000,m:40000},{n:"Dynamic Purple 1oz",s:"TIDY399",p:50000,m:40000},{n:"Dynamic Red Grape 1oz",s:"TIDY397",p:50000,m:40000},{n:"Dynamic Ruby Port 1oz",s:"TIDY394",p:50000,m:40000},{n:"Dynamic Candy Apple Red 1oz",s:"TIDY392",p:50000,m:40000},{n:"Dynamic Scarlet Red 1oz",s:"TIDY391",p:50000,m:40000},{n:"Dynamic Sedona Orange 1oz",s:"TIDY389",p:50000,m:40000},{n:"Dynamic Skin 1oz",s:"TIDY415",p:50000,m:40000},{n:"Dynamic Sky Blue 1oz",s:"TIDY025",p:30000,m:24000},{n:"Dynamic Sunflower Yellow 1oz",s:"TIDY385",p:50000,m:40000},{n:"Dynamic Tropical Purple 1oz",s:"TIDY026",p:30000,m:24000},{n:"Dynamic Turquoise 1oz",s:"TIDY027",p:30000,m:24000}
+      {
+        "n": "Dynamic Black 1oz",
+        "s": "TIDY010",
+        "p": 49000,
+        "m": 38000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Blanco 1oz",
+        "s": "TIDY013",
+        "p": 49000,
+        "m": 38000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Triple Black 1oz",
+        "s": "TIDY008",
+        "p": 54000,
+        "m": 42000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Heavy White 1oz",
+        "s": "TIDY017",
+        "p": 40000,
+        "m": 32000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Bright White 1oz",
+        "s": "TIDY416",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Atomic Green 1oz",
+        "s": "TIDY407",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Azure Blue 1oz",
+        "s": "TIDY403",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Baby Blue 1oz",
+        "s": "TIDY404",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Blue 1oz",
+        "s": "TIDY001",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Blue Abyss 1oz",
+        "s": "TIDY401",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Bombshell 1oz",
+        "s": "TIDY410",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Bright Orange 1oz",
+        "s": "TIDY387",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Brown 1oz",
+        "s": "TIDY412",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Bubble Gum 1oz",
+        "s": "TIDY004",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Burgundy Red 1oz",
+        "s": "TIDY005",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Canary Yellow 1oz",
+        "s": "TIDY006",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Carrot Orange 1oz",
+        "s": "TIDY388",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Chinese Red 1oz",
+        "s": "TIDY313",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Chocolate 1oz",
+        "s": "TIDY411",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Cobalt Blue 1oz",
+        "s": "TIDY402",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Crimson Red 1oz",
+        "s": "TIDY390",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Dark Blue 1oz",
+        "s": "TIDY400",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Dark Green 1oz",
+        "s": "TIDY409",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Deep Pink 1oz",
+        "s": "TIDY395",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Electric Blue 1oz",
+        "s": "TIDY014",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Emerald Green 1oz",
+        "s": "TIDY406",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Fire Red 1oz",
+        "s": "TIDY015",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Forest Green 1oz",
+        "s": "TIDY408",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Golden Yellow 1oz",
+        "s": "TIDY016",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Grey 1oz",
+        "s": "TIDY413",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Highlighter Yellow 1oz",
+        "s": "TIDY384",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Hot Pink 1oz",
+        "s": "TIDY019",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Lavender 1oz",
+        "s": "TIDY398",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Leaf Green 1oz",
+        "s": "TIDY020",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Lemon Yellow 1oz",
+        "s": "TIDY021",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Lime Green 1oz",
+        "s": "TIDY022",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Magenta 1oz",
+        "s": "TIDY023",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Mint 1oz",
+        "s": "TIDY405",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Mustard 1oz",
+        "s": "TIDY386",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Nude 1oz",
+        "s": "TIDY414",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Orange 1oz",
+        "s": "TIDY024",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Pink 1oz",
+        "s": "TIDY396",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Pure Red 1oz",
+        "s": "TIDY393",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Purple 1oz",
+        "s": "TIDY399",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Red Grape 1oz",
+        "s": "TIDY397",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Ruby Port 1oz",
+        "s": "TIDY394",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Candy Apple Red 1oz",
+        "s": "TIDY392",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Scarlet Red 1oz",
+        "s": "TIDY391",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Sedona Orange 1oz",
+        "s": "TIDY389",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Skin 1oz",
+        "s": "TIDY415",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Sky Blue 1oz",
+        "s": "TIDY025",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Sunflower Yellow 1oz",
+        "s": "TIDY385",
+        "p": 50000,
+        "m": 40000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Tropical Purple 1oz",
+        "s": "TIDY026",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Turquoise 1oz",
+        "s": "TIDY027",
+        "p": 30000,
+        "m": 24000,
+        "stock": 0
+      }
     ],
     "Dynamic Grandes": [
-      {n:"Dynamic Black 8oz",s:"TIDY011",p:130000,m:96000},{n:"Dynamic Blanco 8oz",s:"TIDY009",p:130000,m:96000},{n:"Dynamic Triple Black 8oz",s:"TIDY012",p:170000,m:139000},{n:"Dynamic Heavy White 8oz",s:"TIDY018",p:160000,m:133000},{n:"Dynamic Black Out 8oz",s:"TIDY383",p:190000,m:160000}
+      {
+        "n": "Dynamic Black 8oz",
+        "s": "TIDY011",
+        "p": 130000,
+        "m": 96000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Blanco 8oz",
+        "s": "TIDY009",
+        "p": 130000,
+        "m": 96000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Triple Black 8oz",
+        "s": "TIDY012",
+        "p": 170000,
+        "m": 139000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Heavy White 8oz",
+        "s": "TIDY018",
+        "p": 160000,
+        "m": 133000,
+        "stock": 0
+      },
+      {
+        "n": "Dynamic Black Out 8oz",
+        "s": "TIDY383",
+        "p": 190000,
+        "m": 160000,
+        "stock": 0
+      }
     ],
     "Eternal 1oz": [
-      {n:"Eternal Aquamarine 1oz",s:"TIET443",p:65000,m:49400},{n:"Eternal Avocado 1oz",s:"TIET029",p:65000,m:49400},{n:"Eternal Bermuda Blue 1oz",s:"TIET381",p:60000,m:48000},{n:"Eternal Blue Concentrate 1oz",s:"TIET030",p:60000,m:48000},{n:"Eternal Bright Orange 1oz",s:"TIET031",p:60000,m:48000},{n:"Eternal Bright Yellow 1oz",s:"TIET032",p:65000,m:49400},{n:"Eternal Brown 1oz",s:"TIET033",p:65000,m:49400},{n:"Eternal Bumble Bee 1oz",s:"TIET034",p:60000,m:48000},{n:"Eternal Caramel 1oz",s:"TIET035",p:65000,m:49400},{n:"Eternal Cocoa Bean 1oz",s:"TIET036",p:60000,m:48000},{n:"Eternal Cotton Candy 1oz",s:"TIET037",p:60000,m:48000},{n:"Eternal Crimson Red 1oz",s:"TIET038",p:60000,m:48000},{n:"Eternal Dark Brown 1oz",s:"TIET039",p:65000,m:49400},{n:"Eternal Dark Cobalt 1oz",s:"TIET040",p:65000,m:49400},{n:"Eternal Dark Ochre 1oz",s:"TIET041",p:65000,m:49400},{n:"Eternal Dark Purple 1oz",s:"TIET042",p:60000,m:48000},{n:"Eternal Dark Red 1oz",s:"TIET043",p:60000,m:48000},{n:"Eternal Deep Red 1oz",s:"TIET044",p:65000,m:49400},{n:"Eternal Dusty Rose 1oz",s:"TIET045",p:65000,m:49400},{n:"Eternal Georgia Peach 1oz",s:"TIET047",p:65000,m:49400},{n:"Eternal Golden Yellow 1oz",s:"TIET048",p:65000,m:49400},{n:"Eternal Graffiti Green 1oz",s:"TIET049",p:60000,m:48000},{n:"Eternal Grass Green 1oz",s:"TIET050",p:65000,m:49400},{n:"Eternal Gray 1oz",s:"TIET051",p:60000,m:48000},{n:"Eternal Green Concentrate 1oz",s:"TIET052",p:65000,m:49400},{n:"Eternal Honeydew 1oz",s:"TIET053",p:65000,m:49400},{n:"Eternal Hot Pink 1oz",s:"TIET054",p:60000,m:48000},{n:"Eternal Jungle Green 1oz",s:"TIET055",p:60000,m:48000},{n:"Eternal Lavender 1oz",s:"TIET056",p:65000,m:49400},{n:"Eternal Light Magenta 1oz",s:"TIET057",p:60000,m:48000},{n:"Eternal Light Purple 1oz",s:"TIET058",p:60000,m:48000},{n:"Eternal Light Red 1oz",s:"TIET059",p:60000,m:48000},{n:"Eternal Lightning Yellow 1oz",s:"TIET060",p:60000,m:48000},{n:"Eternal Lime Green 1oz",s:"TIET061",p:60000,m:48000},{n:"Eternal Lining Black 1oz",s:"TIET062",p:65000,m:49400},{n:"Eternal Lipstick Red 1oz",s:"TIET063",p:60000,m:48000},{n:"Eternal Magenta 1oz",s:"TIET064",p:60000,m:48000},{n:"Eternal Mint Green 1oz",s:"TIET065",p:60000,m:48000},{n:"Eternal Mudslide 1oz",s:"TIET066",p:60000,m:48000},{n:"Eternal Nuclear Green 1oz",s:"TIET068",p:60000,m:48000},{n:"Eternal Ochre 1oz",s:"TIET069",p:65000,m:49400},{n:"Eternal Olive 1oz",s:"TIET070",p:65000,m:49400},{n:"Eternal Orange 1oz",s:"TIET071",p:60000,m:48000},{n:"Eternal Peachy Flesh 1oz",s:"TIET072",p:65000,m:49400},{n:"Eternal Peacock Blue 1oz",s:"TIET073",p:65000,m:49400},{n:"Eternal Periwinkle 1oz",s:"TIET074",p:65000,m:49400},{n:"Eternal Pink 1oz",s:"TIET075",p:60000,m:48000},{n:"Eternal Plum 1oz",s:"TIET314",p:65000,m:49400},{n:"Eternal Purple Concentrate 1oz",s:"TIET076",p:65000,m:49400},{n:"Eternal Robin Egg 1oz",s:"TIET077",p:60000,m:48000},{n:"Eternal Ruby Red 1oz",s:"TIET078",p:65000,m:49400},{n:"Eternal Seafoam 1oz",s:"TIET080",p:65000,m:49400},{n:"Eternal Sky Blue 1oz",s:"TIET081",p:60000,m:48000},{n:"Eternal Smoke 1oz",s:"TIET082",p:65000,m:49400},{n:"Eternal Solid Gold 1oz",s:"TIET083",p:60000,m:48000},{n:"Eternal Spearmint 1oz",s:"TIET084",p:65000,m:49400},{n:"Eternal Sunflower 1oz",s:"TIET085",p:65000,m:49400},{n:"Eternal Tangerine 1oz",s:"TIET086",p:65000,m:49400},{n:"Eternal Triple Black 1oz",s:"TIET088",p:65000,m:49400},{n:"Eternal Tropical Teal 1oz",s:"TIET089",p:60000,m:48000},{n:"Eternal True Blue 1oz",s:"TIET090",p:60000,m:48000},{n:"Eternal True Gold 1oz",s:"TIET091",p:65000,m:49400},{n:"Eternal Turquoise 1oz",s:"TIET092",p:60000,m:48000},{n:"Eternal Victorian Rose 1oz",s:"TIET093",p:60000,m:48000},{n:"Eternal White 1oz",s:"TIET094",p:65000,m:49400},{n:"Eternal Wild Orchid 1oz",s:"TIET095",p:65000,m:49400}
+      {
+        "n": "Eternal Aquamarine 1oz",
+        "s": "TIET443",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Avocado 1oz",
+        "s": "TIET029",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Bermuda Blue 1oz",
+        "s": "TIET381",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Blue Concentrate 1oz",
+        "s": "TIET030",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Bright Orange 1oz",
+        "s": "TIET031",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Bright Yellow 1oz",
+        "s": "TIET032",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Brown 1oz",
+        "s": "TIET033",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Bumble Bee 1oz",
+        "s": "TIET034",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Caramel 1oz",
+        "s": "TIET035",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Cocoa Bean 1oz",
+        "s": "TIET036",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Cotton Candy 1oz",
+        "s": "TIET037",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Crimson Red 1oz",
+        "s": "TIET038",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dark Brown 1oz",
+        "s": "TIET039",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dark Cobalt 1oz",
+        "s": "TIET040",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dark Ochre 1oz",
+        "s": "TIET041",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dark Purple 1oz",
+        "s": "TIET042",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dark Red 1oz",
+        "s": "TIET043",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Deep Red 1oz",
+        "s": "TIET044",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Dusty Rose 1oz",
+        "s": "TIET045",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Georgia Peach 1oz",
+        "s": "TIET047",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Golden Yellow 1oz",
+        "s": "TIET048",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Graffiti Green 1oz",
+        "s": "TIET049",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Grass Green 1oz",
+        "s": "TIET050",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Gray 1oz",
+        "s": "TIET051",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Green Concentrate 1oz",
+        "s": "TIET052",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Honeydew 1oz",
+        "s": "TIET053",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Hot Pink 1oz",
+        "s": "TIET054",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Jungle Green 1oz",
+        "s": "TIET055",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Lavender 1oz",
+        "s": "TIET056",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Light Magenta 1oz",
+        "s": "TIET057",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Light Purple 1oz",
+        "s": "TIET058",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Light Red 1oz",
+        "s": "TIET059",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Lightning Yellow 1oz",
+        "s": "TIET060",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Lime Green 1oz",
+        "s": "TIET061",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Lining Black 1oz",
+        "s": "TIET062",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Lipstick Red 1oz",
+        "s": "TIET063",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Magenta 1oz",
+        "s": "TIET064",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Mint Green 1oz",
+        "s": "TIET065",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Mudslide 1oz",
+        "s": "TIET066",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Nuclear Green 1oz",
+        "s": "TIET068",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Ochre 1oz",
+        "s": "TIET069",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Olive 1oz",
+        "s": "TIET070",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Orange 1oz",
+        "s": "TIET071",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Peachy Flesh 1oz",
+        "s": "TIET072",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Peacock Blue 1oz",
+        "s": "TIET073",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Periwinkle 1oz",
+        "s": "TIET074",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Pink 1oz",
+        "s": "TIET075",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Plum 1oz",
+        "s": "TIET314",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Purple Concentrate 1oz",
+        "s": "TIET076",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Robin Egg 1oz",
+        "s": "TIET077",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Ruby Red 1oz",
+        "s": "TIET078",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Seafoam 1oz",
+        "s": "TIET080",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Sky Blue 1oz",
+        "s": "TIET081",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Smoke 1oz",
+        "s": "TIET082",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Solid Gold 1oz",
+        "s": "TIET083",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Spearmint 1oz",
+        "s": "TIET084",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Sunflower 1oz",
+        "s": "TIET085",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Tangerine 1oz",
+        "s": "TIET086",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Triple Black 1oz",
+        "s": "TIET088",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Tropical Teal 1oz",
+        "s": "TIET089",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal True Blue 1oz",
+        "s": "TIET090",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal True Gold 1oz",
+        "s": "TIET091",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Turquoise 1oz",
+        "s": "TIET092",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Victorian Rose 1oz",
+        "s": "TIET093",
+        "p": 60000,
+        "m": 48000,
+        "stock": 0
+      },
+      {
+        "n": "Eternal White 1oz",
+        "s": "TIET094",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      },
+      {
+        "n": "Eternal Wild Orchid 1oz",
+        "s": "TIET095",
+        "p": 65000,
+        "m": 49400,
+        "stock": 0
+      }
     ]
   },
-  maquinas: {
+  "maquinas": {
     "AVA": [
-      {n:"Maquina AVA A2",s:"MQAV010",p:430000,m:330000},{n:"Maquina AVA A3",s:"MQAV011",p:460000,m:360000},{n:"Maquina AVA EP8",s:"MQAV001",p:970000,m:737200},{n:"Maquina AVA EP9",s:"MQAV012",p:1045000,m:794000},{n:"Maquina AVA EP10",s:"MQAV041",p:1185000,m:900000},{n:"Maquina AVA GTS Pen",s:"MQAV058",p:1000000,m:800000},{n:"Maquina AVA Uni-A",s:"MQGE048",p:650000,m:500000},{n:"Maquina AVA Uni-B",s:"MQAV056",p:1150000,m:700000}
+      {
+        "n": "Maquina AVA A2",
+        "s": "MQAV010",
+        "p": 430000,
+        "m": 330000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA A3",
+        "s": "MQAV011",
+        "p": 460000,
+        "m": 360000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA EP8",
+        "s": "MQAV001",
+        "p": 970000,
+        "m": 737200,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA EP9",
+        "s": "MQAV012",
+        "p": 1045000,
+        "m": 794000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA EP10",
+        "s": "MQAV041",
+        "p": 1185000,
+        "m": 900000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA GTS Pen",
+        "s": "MQAV058",
+        "p": 1000000,
+        "m": 800000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA Uni-A",
+        "s": "MQGE048",
+        "p": 650000,
+        "m": 500000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina AVA Uni-B",
+        "s": "MQAV056",
+        "p": 1150000,
+        "m": 700000,
+        "stock": 0
+      }
     ],
     "Bronc": [
-      {n:"Maquina Bronc V1",s:"MQGO002",p:790000,m:600000},{n:"Maquina Bronc V2",s:"MQGO003",p:960000,m:685000},{n:"Maquina Bronc V6",s:"MQFL039",p:600000,m:450000},{n:"Maquina Bronc V9",s:"MQGO015",p:700000,m:590000},{n:"Maquina Bronc V12",s:"MQGO043",p:1120000,m:895000},{n:"Maquina Bronc X1",s:"MQFL050",p:1150000,m:880000},{n:"Maquina Bronc X2",s:"MQFL054",p:1250000,m:930000},{n:"Maquina Bronc Bullet",s:"MQFL040",p:600000,m:450000}
+      {
+        "n": "Maquina Bronc V1",
+        "s": "MQGO002",
+        "p": 790000,
+        "m": 600000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc V2",
+        "s": "MQGO003",
+        "p": 960000,
+        "m": 685000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc V6",
+        "s": "MQFL039",
+        "p": 600000,
+        "m": 450000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc V9",
+        "s": "MQGO015",
+        "p": 700000,
+        "m": 590000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc V12",
+        "s": "MQGO043",
+        "p": 1120000,
+        "m": 895000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc X1",
+        "s": "MQFL050",
+        "p": 1150000,
+        "m": 880000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc X2",
+        "s": "MQFL054",
+        "p": 1250000,
+        "m": 930000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Bronc Bullet",
+        "s": "MQFL040",
+        "p": 600000,
+        "m": 450000,
+        "stock": 0
+      }
     ],
     "Gear": [
-      {n:"Maquina Gear",s:"MQPR007",p:600000,m:455000},{n:"Maquina Gear Clic",s:"MQGE046",p:1080000,m:830000},{n:"Maquina Gear de Bateria",s:"MQLO034",p:750000,m:550000},{n:"Maquina Gear G Energy",s:"MQPR036",p:730000,m:590000},{n:"Maquina Gear G Power",s:"MQGO035",p:840000,m:640000},{n:"Maquina Gear G2",s:"MQPR037",p:1150000,m:890000},{n:"Maquina Gear G3 Maxx",s:"MQEZ053",p:900000,m:680000},{n:"Maquina Gear Mini Click",s:"MQGE047",p:840000,m:641000},{n:"Maquina Gear Space",s:"MQPR042",p:1170000,m:920000},{n:"Maquina Gear Dot",s:"MQIN061",p:550000,m:420000}
+      {
+        "n": "Maquina Gear",
+        "s": "MQPR007",
+        "p": 600000,
+        "m": 455000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear Clic",
+        "s": "MQGE046",
+        "p": 1080000,
+        "m": 830000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear de Bateria",
+        "s": "MQLO034",
+        "p": 750000,
+        "m": 550000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear G Energy",
+        "s": "MQPR036",
+        "p": 730000,
+        "m": 590000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear G Power",
+        "s": "MQGO035",
+        "p": 840000,
+        "m": 640000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear G2",
+        "s": "MQPR037",
+        "p": 1150000,
+        "m": 890000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear G3 Maxx",
+        "s": "MQEZ053",
+        "p": 900000,
+        "m": 680000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear Mini Click",
+        "s": "MQGE047",
+        "p": 840000,
+        "m": 641000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear Space",
+        "s": "MQPR042",
+        "p": 1170000,
+        "m": 920000,
+        "stock": 0
+      },
+      {
+        "n": "Maquina Gear Dot",
+        "s": "MQIN061",
+        "p": 550000,
+        "m": 420000,
+        "stock": 0
+      }
     ]
   },
-  equipos: {
+  "equipos": {
     "Fuentes de Poder": [
-      {n:"Fuente Aurora",s:"FBPR001",p:260000,m:210000},{n:"Fuente Aurora A3",s:"FBPR021",p:320000},{n:"Fuente AVA Dual",s:"FBAV017",p:320000,m:220000},{n:"Fuente Bronc 034",s:"FBGO007",p:450000},{n:"Fuente Bronc 036",s:"FBGO009",p:520000},{n:"Fuente Bronc 037",s:"FBGO010",p:400000,m:300000},{n:"Fuente Critical X1",s:"FBFY027",p:800000},{n:"Fuente Dual Grande",s:"FBPR022",p:100000},{n:"Fuente Economica Sencilla",s:"FBPR018",p:100000,m:50000},{n:"Fuente Hurricane",s:"FBPR012",p:270000,m:200000},{n:"Fuente Mini",s:"FBPR023",p:80000}
+      {
+        "n": "Fuente Aurora",
+        "s": "FBPR001",
+        "p": 260000,
+        "m": 210000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Aurora A3",
+        "s": "FBPR021",
+        "p": 320000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente AVA Dual",
+        "s": "FBAV017",
+        "p": 320000,
+        "m": 220000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Bronc 034",
+        "s": "FBGO007",
+        "p": 450000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Bronc 036",
+        "s": "FBGO009",
+        "p": 520000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Bronc 037",
+        "s": "FBGO010",
+        "p": 400000,
+        "m": 300000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Critical X1",
+        "s": "FBFY027",
+        "p": 800000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Dual Grande",
+        "s": "FBPR022",
+        "p": 100000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Economica Sencilla",
+        "s": "FBPR018",
+        "p": 100000,
+        "m": 50000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Hurricane",
+        "s": "FBPR012",
+        "p": 270000,
+        "m": 200000,
+        "stock": 0
+      },
+      {
+        "n": "Fuente Mini",
+        "s": "FBPR023",
+        "p": 80000,
+        "stock": 0
+      }
     ]
   },
-  cuidado: {
+  "cuidado": {
     "A&D Cremas": [
-      {n:"A&D Colors 150 Paca x27",s:"SNDO001",p:19200},{n:"A&D Colors 300 Paca x18",s:"SNDO002",p:32400},{n:"A&D Lata 9g Paca x10",s:"SNDO025",p:30000},{n:"A&D Pote 150 Paca x27",s:"SNDO003",p:18000},{n:"A&D Pote 300 Paca x18",s:"SNDO004",p:30000},{n:"A&D Sobre Paca x16",s:"SNDO005",p:78000},{n:"A&D Sobre Rosa Caja x25",s:"SNDO028",p:40000},{n:"A&D Sobre Unidad",s:"SNDO021",p:8000}
+      {
+        "n": "A&D Colors 150 Paca x27",
+        "s": "SNDO001",
+        "p": 19200,
+        "stock": 0
+      },
+      {
+        "n": "A&D Colors 300 Paca x18",
+        "s": "SNDO002",
+        "p": 32400,
+        "stock": 0
+      },
+      {
+        "n": "A&D Lata 9g Paca x10",
+        "s": "SNDO025",
+        "p": 30000,
+        "stock": 0
+      },
+      {
+        "n": "A&D Pote 150 Paca x27",
+        "s": "SNDO003",
+        "p": 18000,
+        "stock": 0
+      },
+      {
+        "n": "A&D Pote 300 Paca x18",
+        "s": "SNDO004",
+        "p": 30000,
+        "stock": 0
+      },
+      {
+        "n": "A&D Sobre Paca x16",
+        "s": "SNDO005",
+        "p": 78000,
+        "stock": 0
+      },
+      {
+        "n": "A&D Sobre Rosa Caja x25",
+        "s": "SNDO028",
+        "p": 40000,
+        "stock": 0
+      },
+      {
+        "n": "A&D Sobre Unidad",
+        "s": "SNDO021",
+        "p": 8000,
+        "stock": 0
+      }
     ]
   },
-  accesorios: {
+  "accesorios": {
     "Grips": [
-      {n:"Grip Acero",s:"VAPR070",p:35000},{n:"Grip Aguja Aluminio",s:"VAPR071",p:40000,m:22000},{n:"Grip Aluminio 25mm",s:"VAPR095",p:17000,m:9000},{n:"Grip Aluminio 35mm",s:"VAPR072",p:35000,m:18000},{n:"Grip Big Wasp",s:"VAPR073",p:220000,m:50000},{n:"Grip Big Wasp Ajustable",s:"VAPR074",p:250000,m:150000}
+      {
+        "n": "Grip Acero",
+        "s": "VAPR070",
+        "p": 35000,
+        "stock": 0
+      },
+      {
+        "n": "Grip Aguja Aluminio",
+        "s": "VAPR071",
+        "p": 40000,
+        "m": 22000,
+        "stock": 0
+      },
+      {
+        "n": "Grip Aluminio 25mm",
+        "s": "VAPR095",
+        "p": 17000,
+        "m": 9000,
+        "stock": 0
+      },
+      {
+        "n": "Grip Aluminio 35mm",
+        "s": "VAPR072",
+        "p": 35000,
+        "m": 18000,
+        "stock": 0
+      },
+      {
+        "n": "Grip Big Wasp",
+        "s": "VAPR073",
+        "p": 220000,
+        "m": 50000,
+        "stock": 0
+      },
+      {
+        "n": "Grip Big Wasp Ajustable",
+        "s": "VAPR074",
+        "p": 250000,
+        "m": 150000,
+        "stock": 0
+      }
     ]
   }
 };
