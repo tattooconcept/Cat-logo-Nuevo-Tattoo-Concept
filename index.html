@@ -4,125 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tattoo Concept | Catálogo Oficial de Insumos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-body: #f8fafc;
       --card-bg: #ffffff;
       --primary: #0f172a;
       --accent: #2563eb;
-      --accent-green: #10b981;
+      --whatsapp: #25d366;
       --text-main: #1e293b;
       --text-muted: #64748b;
       --border: #e2e8f0;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-    
-    body { background-color: var(--bg-body); color: var(--text-main); padding-bottom: 80px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    body { background-color: var(--bg-body); color: var(--text-main); padding-bottom: 100px; }
 
-    /* Top Navigation Bar */
+    /* Top Navigation */
     header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
-      position: sticky; top: 0; z-index: 100;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      background: #ffffff; border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
     }
 
-    .top-bar {
+    .nav-container {
       max-width: 1280px; margin: 0 auto; padding: 14px 20px;
       display: flex; justify-content: space-between; align-items: center; gap: 15px;
     }
 
-    .brand-logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; text-decoration: none; }
+    .brand-logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); text-decoration: none; }
     .brand-logo span { color: var(--accent); }
 
-    .header-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
 
-    .btn-advisor {
-      background: #25d366; color: white; border: none; padding: 9px 16px;
-      border-radius: 99px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
-      display: flex; align-items: center; gap: 6px; text-decoration: none;
+    .btn-action {
+      padding: 9px 18px; border-radius: 99px; font-weight: 700; font-size: 0.85rem;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; border: none;
     }
 
-    .btn-cart {
-      background: var(--primary); color: white; border: none; padding: 9px 18px;
-      border-radius: 99px; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    .btn-ws { background: var(--whatsapp); color: white; }
+    .btn-ai { background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; }
+    .btn-cart { background: var(--primary); color: white; }
+
+    /* Banner Introducción */
+    .hero-banner {
+      background: #ffffff; border-bottom: 1px solid var(--border); padding: 35px 20px; text-align: center;
     }
 
-    /* Hero Section with AI & Search */
-    .hero {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: white; padding: 40px 20px; text-align: center;
+    .hero-banner h1 { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-bottom: 8px; }
+    .hero-banner p { font-size: 0.98rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 20px; }
+
+    .search-wrapper {
+      max-width: 600px; margin: 0 auto; display: flex; background: #f1f5f9;
+      border: 1px solid var(--border); border-radius: 99px; padding: 6px;
     }
 
-    .hero h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
-    .hero p { font-size: 0.95rem; color: #94a3b8; margin-bottom: 24px; }
-
-    .search-box {
-      max-width: 550px; margin: 0 auto; display: flex; gap: 10px; background: white;
-      padding: 6px; border-radius: 99px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    .search-wrapper input {
+      flex: 1; border: none; background: transparent; padding: 10px 20px;
+      font-size: 0.95rem; outline: none; color: var(--primary);
     }
 
-    .search-box input {
-      flex: 1; border: none; padding: 12px 20px; font-size: 0.95rem; outline: none; border-radius: 99px;
+    /* Menú Desplegable de Marcas */
+    .brand-menu-bar {
+      background: #ffffff; border-bottom: 1px solid var(--border); padding: 12px 20px;
     }
 
-    /* Brand Categories Bar (Menú Desplegable/Pestañas) */
-    .nav-filters {
-      background: white; border-bottom: 1px solid var(--border); padding: 12px 20px;
-    }
-
-    .filters-container {
-      max-width: 1280px; margin: 0 auto; display: flex; gap: 10px; overflow-x: auto;
+    .menu-container {
+      max-width: 1280px; margin: 0 auto; display: flex; gap: 12px; overflow-x: auto;
       align-items: center; scrollbar-width: none;
     }
 
-    .filter-btn {
-      background: #f1f5f9; border: 1px solid var(--border); color: var(--text-main);
-      padding: 8px 16px; border-radius: 99px; font-size: 0.85rem; font-weight: 600;
-      cursor: pointer; white-space: nowrap; transition: all 0.2s;
+    .dropdown-select {
+      padding: 8px 16px; border-radius: 99px; border: 1px solid var(--border);
+      background: #f8fafc; font-weight: 700; font-size: 0.85rem; color: var(--primary); outline: none; cursor: pointer;
     }
 
-    .filter-btn.active, .filter-btn:hover {
-      background: var(--accent); color: white; border-color: var(--accent);
-    }
+    /* Grid Container */
+    .main-container { max-width: 1280px; margin: 30px auto; padding: 0 20px; }
 
-    .only-stock-toggle {
-      margin-left: auto; display: flex; align-items: center; gap: 8px;
-      font-size: 0.82rem; font-weight: 700; color: var(--accent-green); white-space: nowrap;
-    }
-
-    /* Main Product Grid */
-    .main-layout { max-width: 1280px; margin: 30px auto; padding: 0 20px; }
-
-    .category-title {
-      font-size: 1.3rem; font-weight: 800; color: var(--primary); margin-bottom: 16px;
-      display: flex; align-items: center; justify-content: space-between;
+    .section-header {
+      font-size: 1.4rem; font-weight: 800; color: var(--primary); margin: 25px 0 15px;
+      border-bottom: 2px solid var(--border); padding-bottom: 8px;
     }
 
     .grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px; margin-bottom: 40px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px;
     }
 
-    /* Cards */
+    /* Cards de Producto */
     .card {
       background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
       padding: 18px; display: flex; flex-direction: column; justify-content: space-between;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s;
     }
 
-    .card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
 
     .badge-stock {
-      display: inline-block; padding: 4px 10px; border-radius: 99px;
-      font-size: 0.72rem; font-weight: 700; background: #ecfdf5; color: #059669;
-      border: 1px solid #a7f3d0; margin-bottom: 8px; width: fit-content;
+      display: inline-block; padding: 4px 10px; border-radius: 99px; font-size: 0.72rem;
+      font-weight: 800; background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; margin-bottom: 8px; width: fit-content;
     }
 
-    .sku { font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
-    .title { font-size: 0.98rem; font-weight: 700; color: var(--primary); margin: 4px 0 12px; line-height: 1.3; }
+    .sku { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; }
+    .title { font-size: 1rem; font-weight: 700; color: var(--primary); margin: 4px 0 12px; line-height: 1.3; }
 
     /* Switch Presentación */
     .switch-box {
@@ -130,27 +113,26 @@
     }
 
     .switch-btn {
-      flex: 1; padding: 5px; border: none; background: transparent; color: var(--text-muted);
-      font-size: 0.75rem; font-weight: 700; border-radius: 6px; cursor: pointer;
+      flex: 1; padding: 6px; border: none; background: transparent; color: var(--text-muted);
+      font-size: 0.78rem; font-weight: 700; border-radius: 6px; cursor: pointer;
     }
 
     .switch-btn.active { background: white; color: var(--primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
 
-    /* Prices Box */
-    .prices { background: #f8fafc; border-radius: 10px; padding: 10px; margin-bottom: 14px; }
-    .p-row { display: flex; justify-content: space-between; font-size: 0.8rem; padding: 3px 0; }
+    .price-box { background: #f8fafc; border-radius: 10px; padding: 10px; margin-bottom: 14px; }
+    .p-row { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 3px 0; }
     .p-label { color: var(--text-muted); font-weight: 600; }
     .p-val { font-weight: 800; color: var(--primary); }
     .p-val.mayor { color: var(--accent); }
 
     .btn-add {
-      width: 100%; padding: 10px; background: var(--accent); color: white; border: none;
-      border-radius: 10px; font-weight: 700; font-size: 0.85rem; cursor: pointer; transition: background 0.2s;
+      width: 100%; padding: 11px; background: var(--accent); color: white; border: none;
+      border-radius: 10px; font-weight: 700; font-size: 0.88rem; cursor: pointer; transition: background 0.2s;
     }
 
     .btn-add:hover { background: #1d4ed8; }
 
-    /* Drawer Carrito */
+    /* Cart Drawer */
     .drawer {
       position: fixed; top: 0; right: -400px; width: 100%; max-width: 380px; height: 100vh;
       background: white; border-left: 1px solid var(--border); z-index: 200; padding: 20px;
@@ -162,41 +144,45 @@
 </head>
 <body>
 
-  <!-- Top Bar -->
+  <!-- Top Navigation -->
   <header>
-    <div class="top-bar">
+    <div class="nav-container">
       <a href="#" class="brand-logo">TATTOO <span>CONCEPT</span></a>
-      <div class="header-actions">
-        <a href="https://wa.me/573215893452?text=Hola,%20quisiera%20asesoría%20directa%20con%20un%20vendedor." target="_blank" class="btn-advisor">
-          💬 Asesor Humano
+      <div class="nav-actions">
+        <a href="https://wa.me/573215893452?text=Hola,%20quisiera%20contacto%20directo%20con%20un%20asesor." target="_blank" class="btn-action btn-ws">
+          💬 Contacto por WhatsApp
         </a>
-        <button class="btn-cart" onclick="toggleCart()">🛒 (<span id="cartCount">0</span>)</button>
+        <button class="btn-action btn-ai" onclick="alert('🤖 Asistente Virtual: ¿Qué insumo o referencia buscas hoy?')">
+          ✨ Asistente Virtual
+        </button>
+        <button class="btn-action btn-cart" onclick="toggleCart()">🛒 (<span id="cartCount">0</span>)</button>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <div class="hero">
-    <h1>Catálogo de Insumos Profesionales</h1>
-    <p>Consulta existencias en tiempo real y realiza tu pedido al instante.</p>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Buscar por referencia (ej: ACPR018) o producto..." oninput="filtrar()">
+  <!-- Hero Banner Introducción -->
+  <div class="hero-banner">
+    <h1>Insumos Profesionales para Tatuaje</h1>
+    <p>Explora nuestro catálogo interactivo con existencias en tiempo real, precios por caja o unidad y asesoría directa.</p>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Buscar por referencia (ej: ACPR018) o producto..." oninput="render()">
     </div>
   </div>
 
-  <!-- Filters Nav -->
-  <div class="nav-filters">
-    <div class="filters-container" id="brandFilters">
-      <!-- Filtros generados dinámicamente -->
+  <!-- Menú Desplegable por Marca -->
+  <div class="brand-menu-bar">
+    <div class="menu-container">
+      <label style="font-size:0.85rem; font-weight:800; color:var(--primary);">Filtrar por Marca:</label>
+      <select id="brandSelect" class="dropdown-select" onchange="render()">
+        <option value="TODAS">Ver Todas las Marcas</option>
+      </select>
     </div>
   </div>
 
-  <!-- Main Content -->
-  <div class="main-layout" id="mainLayout">
-    <!-- Productos -->
-  </div>
+  <!-- Content Grid -->
+  <div class="main-container" id="mainContainer"></div>
 
-  <!-- Cart Drawer -->
+  <!-- Drawer Carrito -->
   <div class="drawer" id="cartDrawer">
     <div>
       <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); padding-bottom:12px;">
@@ -211,101 +197,135 @@
         <span id="cartTotal" style="color:var(--accent);">$0</span>
       </div>
       <button onclick="enviarWhatsApp()" style="width:100%; padding:14px; background:#25d366; color:white; border:none; border-radius:10px; font-weight:800; cursor:pointer;">
-        Enviar Pedido por WhatsApp 🚀
+        Finalizar Pedido por WhatsApp 🚀
       </button>
     </div>
   </div>
 
   <script src="products.js"></script>
   <script>
-    let brandActual = 'TODAS';
     let statePres = {};
     let carrito = [];
 
-    function init() {
-      renderFiltros();
-      renderProductos();
-    }
+    // Función universal para obtener todos los productos de la DB
+    function getTodosLosProductos() {
+      let lista = [];
+      if (typeof DB === 'undefined') return lista;
 
-    function renderFiltros() {
-      const container = document.getElementById('brandFilters');
-      let marcas = ['TODAS'];
-
-      for (let sec in DB) {
-        for (let b in DB[sec]) {
-          if (!marcas.includes(b)) marcas.push(b);
+      for (let secKey in DB) {
+        let sec = DB[secKey];
+        if (Array.isArray(sec)) {
+          sec.forEach(p => lista.push(p));
+        } else if (typeof sec === 'object') {
+          for (let subKey in sec) {
+            let sub = sec[subKey];
+            if (Array.isArray(sub)) {
+              sub.forEach(p => lista.push(p));
+            }
+          }
         }
       }
-
-      container.innerHTML = marcas.map(m => `
-        <button class="filter-btn ${m === brandActual ? 'active' : ''}" onclick="filtrarMarca('${m}')">${m}</button>
-      `).join('');
+      return lista;
     }
 
-    function filtrarMarca(marca) {
-      brandActual = marca;
-      renderFiltros();
-      renderProductos();
+    function init() {
+      cargarOpcionesMenu();
+      render();
     }
 
-    function renderProductos() {
-      const main = document.getElementById('mainLayout');
-      const search = document.getElementById('searchInput').value.toLowerCase();
+    function cargarOpcionesMenu() {
+      const select = document.getElementById('brandSelect');
+      const todos = getTodosLosProductos();
+      let marcas = [];
+
+      todos.forEach(p => {
+        let b = p.b || p.marca || 'Otras Marcas';
+        if (!marcas.includes(b)) marcas.push(b);
+      });
+
+      marcas.sort().forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m;
+        opt.textContent = m;
+        select.appendChild(opt);
+      });
+    }
+
+    function render() {
+      const main = document.getElementById('mainContainer');
+      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+      const brandSel = document.getElementById('brandSelect').value;
       main.innerHTML = '';
 
-      for (let sec in DB) {
-        for (let brand in DB[sec]) {
-          if (brandActual !== 'TODAS' && brand !== brandActual) continue;
+      const todos = getTodosLosProductos();
 
-          // **FILTRO CLAVE:** Solo tomar productos que TENGAN STOCK > 0
-          const itemsDisponibles = DB[sec][brand].filter(p => {
-            const matchSearch = p.n.toLowerCase().includes(search) || p.s.toLowerCase().includes(search);
-            const tieneStock = (p.stock || 0) > 0;
-            return matchSearch && tieneStock;
-          });
+      // Agrupar por Marca
+      let agrupados = {};
 
-          if (itemsDisponibles.length === 0) continue;
+      todos.forEach(p => {
+        const marca = p.b || p.marca || 'Otras Marcas';
+        if (brandSel !== 'TODAS' && marca !== brandSel) return;
 
-          const secEl = document.createElement('div');
-          secEl.innerHTML = `<div class="category-title">${brand}</div><div class="grid" id="grid-${brand}"></div>`;
-          main.appendChild(secEl);
+        const matchSearch = (p.n && p.n.toLowerCase().includes(search)) || (p.s && p.s.toLowerCase().includes(search));
+        if (!matchSearch) return;
 
-          const grid = document.getElementById(`grid-${brand}`);
+        if (!agrupados[marca]) agrupados[marca] = [];
+        agrupados[marca].push(p);
+      });
 
-          itemsDisponibles.forEach(p => {
-            if (!statePres[p.s]) statePres[p.s] = 'caja';
+      let totalMostrados = 0;
 
-            const esCartucho = p.pUnidadDetal !== undefined;
-            const card = document.createElement('div');
-            card.className = 'card';
+      for (let marca in agrupados) {
+        const prods = agrupados[marca];
+        if (prods.length === 0) continue;
 
-            card.innerHTML = `
-              <div>
-                <span class="badge-stock">● Disponible (${p.stock} unid)</span>
-                <div class="sku">${p.s}</div>
-                <div class="title">${p.n}</div>
+        const secEl = document.createElement('div');
+        const gridId = `grid-${marca.replace(/[^a-zA-Z0-9]/g, '')}`;
+        secEl.innerHTML = `<div class="section-header">${marca}</div><div class="grid" id="${gridId}"></div>`;
+        main.appendChild(secEl);
 
-                ${esCartucho ? `
-                  <div class="switch-box">
-                    <button class="switch-btn ${statePres[p.s] === 'caja' ? 'active' : ''}" onclick="changePres('${p.s}', 'caja')">📦 Caja x20</button>
-                    <button class="switch-btn ${statePres[p.s] === 'unidad' ? 'active' : ''}" onclick="changePres('${p.s}', 'unidad')">📍 Unidad</button>
-                  </div>
-                ` : ''}
+        const grid = document.getElementById(gridId);
 
-                <div class="prices" id="price-${p.s}">
-                  ${getPriceHtml(p, statePres[p.s])}
+        prods.forEach(p => {
+          const stockNum = p.stock || 0;
+          const tieneStock = stockNum > 0;
+          if (!statePres[p.s]) statePres[p.s] = 'caja';
+
+          const esCartucho = p.pUnidadDetal !== undefined || p.n.toUpperCase().includes('CARTUCHO') || p.n.toUpperCase().includes('AGUJA');
+          const card = document.createElement('div');
+          card.className = 'card';
+
+          card.innerHTML = `
+            <div>
+              <span class="badge-stock" style="${!tieneStock ? 'background:#fef2f2; color:#ef4444; border-color:#fca5a5;' : ''}">
+                ${tieneStock ? `● Disponible (${stockNum} unid)` : '● Agotado'}
+              </span>
+              <div class="sku">${p.s}</div>
+              <div class="title">${p.n}</div>
+
+              ${esCartucho ? `
+                <div class="switch-box">
+                  <button class="switch-btn ${statePres[p.s] === 'caja' ? 'active' : ''}" onclick="changePres('${p.s}', 'caja')">📦 Caja x20</button>
+                  <button class="switch-btn ${statePres[p.s] === 'unidad' ? 'active' : ''}" onclick="changePres('${p.s}', 'unidad')">📍 Unidad</button>
                 </div>
-              </div>
+              ` : ''}
 
-              <button class="btn-add" onclick="agregar('${p.s}')">＋ Agregar al Carrito</button>
-            `;
-            grid.appendChild(card);
-          });
-        }
+              <div class="price-box">
+                ${getPriceHtml(p, statePres[p.s])}
+              </div>
+            </div>
+
+            <button class="btn-add" ${!tieneStock ? 'disabled style="opacity:0.5; cursor:not-allowed;"' : ''} onclick="agregar('${p.s}')">
+              ${tieneStock ? '＋ Agregar al Carrito' : 'Sin Stock'}
+            </button>
+          `;
+          grid.appendChild(card);
+          totalMostrados++;
+        });
       }
 
-      if (main.innerHTML === '') {
-        main.innerHTML = `<p style="text-align:center; color:var(--text-muted); margin:40px 0;">No se encontraron productos disponibles con stock en esta selección.</p>`;
+      if (totalMostrados === 0) {
+        main.innerHTML = `<p style="text-align:center; color:var(--text-muted); margin:40px 0;">No se encontraron productos en esta selección.</p>`;
       }
     }
 
@@ -326,21 +346,14 @@
 
     function changePres(sku, pres) {
       statePres[sku] = pres;
-      renderProductos();
+      render();
     }
 
-    function filtrar() { renderProductos(); }
     function toggleCart() { document.getElementById('cartDrawer').classList.toggle('open'); }
 
     function agregar(sku) {
-      // Agregar lógica de carrito
-      let pObj = null;
-      for (let sec in DB) {
-        for (let b in DB[sec]) {
-          let f = DB[sec][b].find(i => i.s === sku);
-          if (f) { pObj = f; break; }
-        }
-      }
+      const todos = getTodosLosProductos();
+      const pObj = todos.find(i => i.s === sku);
       if (!pObj) return;
 
       const pres = statePres[sku] || 'caja';
@@ -361,7 +374,7 @@
         return;
       }
       let total = 0;
-      container.innerHTML = carrito.map((item, i) => {
+      container.innerHTML = carrito.map((item) => {
         total += item.precio;
         return `
           <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.85rem;">
