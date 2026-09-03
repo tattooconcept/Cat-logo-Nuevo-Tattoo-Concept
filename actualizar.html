@@ -49,7 +49,7 @@ async function procesarExcel() {
 
   localStorage.setItem('tattoo_gh_token', token);
   log.style.color = '#0284c7';
-  log.textContent = 'Procesando archivo de Alegra...';
+  log.textContent = 'Leyendo archivo de inventario de Alegra...';
 
   const file = fileInput.files[0];
   const reader = new FileReader();
@@ -63,19 +63,14 @@ async function procesarExcel() {
 
       let dataMap = {};
       json.forEach(row => {
-        const sku = row['Referencia'] || row['referencia'] || row['SKU'] || row['Item'];
+        const ref = row['Referencia'] || row['referencia'] || row['SKU'];
         const cant = Number(row['Cantidad total'] || row['Cantidad'] || row['cantidad'] || 0);
-        const costoBase = Number(row['Costo promedio'] || row['Precio'] || row['Precio de venta'] || 0);
-        const categoria = String(row['Categoría'] || '').toUpperCase();
-        const itemNombre = String(row['Ítem'] || '').toUpperCase();
+        const costo = Number(row['Costo promedio'] || row['Precio'] || 0);
 
-        if(sku) {
-          const esCartucho = categoria.includes('AGUJA') || itemNombre.includes('CARTUCHO') || itemNombre.includes('WJX') || itemNombre.includes('ILUX');
-          
-          dataMap[String(sku).trim()] = {
+        if(ref) {
+          dataMap[String(ref).trim().toUpperCase()] = {
             stock: cant,
-            unitCost: costoBase,
-            esCartucho: esCartucho
+            costo: costo
           };
         }
       });
@@ -86,38 +81,35 @@ async function procesarExcel() {
       for(let sec in DB) {
         for(let brand in DB[sec]) {
           DB[sec][brand].forEach(prod => {
-            if(dataMap[prod.s] !== undefined) {
-              const itemData = dataMap[prod.s];
+            const skuKey = String(prod.s).trim().toUpperCase();
+            if(dataMap[skuKey] !== undefined) {
+              const itemData = dataMap[skuKey];
               
-              // Asignar existencias
               prod.stock = itemData.stock;
+              
+              // Determinar si es cartucho/aguja
+              const esCartucho = (sec.toUpperCase().includes('AGUJA') || sec.toUpperCase().includes('CARTUCHO') || prod.n.toUpperCase().includes('CARTUCHO') || prod.n.toUpperCase().includes('WJX') || prod.n.toUpperCase().includes('ILUX'));
 
-              if(itemData.unitCost > 0) {
-                if(itemData.esCartucho) {
-                  // Precios de Unidad
-                  prod.pUnidadDetal = Math.round(itemData.unitCost);
-                  prod.pUnidadMayor = Math.round(itemData.unitCost * 0.84); // Descuento al por mayor unidad
-                  
-                  // Precios de Caja (x20)
-                  prod.p = Math.round(itemData.unitCost * 20); // Caja Detal
-                  prod.pMayor = Math.round(itemData.unitCost * 20 * 0.84); // Caja Mayor
+              if(itemData.costo > 0) {
+                if(esCartucho) {
+                  prod.p = Math.round(itemData.costo * 20); // Caja Detal
+                  prod.pMayor = Math.round(itemData.costo * 20 * 0.84); // Caja Mayor
+                  prod.pUnidadDetal = Math.round(itemData.costo); // Unidad Detal
+                  prod.pUnidadMayor = Math.round(itemData.costo * 0.84); // Unidad Mayor
                 } else {
-                  // Productos regulares
-                  prod.p = Math.round(itemData.unitCost);
-                  prod.pMayor = Math.round(itemData.unitCost * 0.85);
+                  prod.p = Math.round(itemData.costo);
+                  prod.pMayor = Math.round(itemData.costo * 0.85);
                 }
               }
 
-              if(itemData.stock > 0) {
-                conStock++;
-              }
+              if(itemData.stock > 0) conStock++;
               actualizados++;
             }
           });
         }
       }
 
-      log.textContent = `Productos actualizados: ${actualizados}\nProductos activos con stock (>0): ${conStock}\nGuardando cambios en GitHub...`;
+      log.textContent = `Productos vinculados: ${actualizados}\nProductos con existencias (>0): ${conStock}\nGuardando en GitHub...`;
 
       const nuevoContent = "var BRAND_INFO = " + JSON.stringify(BRAND_INFO, null, 2) + ";\n\nvar DB = " + JSON.stringify(DB, null, 2) + ";";
 
@@ -137,7 +129,7 @@ async function procesarExcel() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          message: 'Actualización automática de precios por caja y unidad (Detal y Mayor)',
+          message: 'Sincronización exacta por SKU (Stock y Precios)',
           content: btoa(unescape(encodeURIComponent(nuevoContent))),
           sha: fileInfo.sha
         })
@@ -145,9 +137,9 @@ async function procesarExcel() {
 
       if(response.ok) {
         log.style.color = '#16a34a';
-        log.textContent = `¡Éxito!\nStock y precios (Caja y Unidad) sincronizados correctamente.\nTotal ítems visibles: ${conStock}`;
+        log.textContent = `¡Éxito!\nStock corregido.\nTotal productos disponibles para el catálogo: ${conStock}`;
       } else {
-        throw new Error('No se pudo guardar la actualización en GitHub.');
+        throw new Error('No se pudo guardar la actualización.');
       }
     } catch(err) {
       log.style.color = '#dc2626';
