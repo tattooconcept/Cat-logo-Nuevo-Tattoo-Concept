@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tattoo Concept | Catálogo Oficial de Insumos</title>
+  <title>Tattoo Concept | Tienda Virtual de Insumos para Tatuadores</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -20,7 +20,7 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
     body { background-color: var(--bg-body); color: var(--text-main); padding-bottom: 100px; }
 
-    /* Top Navigation */
+    /* Navbar Header */
     header {
       background: #ffffff; border-bottom: 1px solid var(--border);
       position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
@@ -45,13 +45,13 @@
     .btn-ai { background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; }
     .btn-cart { background: var(--primary); color: white; }
 
-    /* Banner Introducción */
+    /* Intro Hero Banner */
     .hero-banner {
-      background: #ffffff; border-bottom: 1px solid var(--border); padding: 35px 20px; text-align: center;
+      background: #ffffff; border-bottom: 1px solid var(--border); padding: 40px 20px; text-align: center;
     }
 
-    .hero-banner h1 { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-bottom: 8px; }
-    .hero-banner p { font-size: 0.98rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 20px; }
+    .hero-banner h1 { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-bottom: 10px; }
+    .hero-banner p { font-size: 1rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 24px; line-height: 1.5; }
 
     .search-wrapper {
       max-width: 600px; margin: 0 auto; display: flex; background: #f1f5f9;
@@ -63,34 +63,36 @@
       font-size: 0.95rem; outline: none; color: var(--primary);
     }
 
-    /* Menú Desplegable de Marcas */
-    .brand-menu-bar {
-      background: #ffffff; border-bottom: 1px solid var(--border); padding: 12px 20px;
+    /* Double Bar Filter (Categorías y Marcas) */
+    .filter-bar {
+      background: #ffffff; border-bottom: 1px solid var(--border); padding: 14px 20px;
     }
 
-    .menu-container {
-      max-width: 1280px; margin: 0 auto; display: flex; gap: 12px; overflow-x: auto;
-      align-items: center; scrollbar-width: none;
+    .filter-container {
+      max-width: 1280px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;
     }
 
-    .dropdown-select {
+    .filter-group { display: flex; align-items: center; gap: 8px; }
+    .filter-group label { font-size: 0.85rem; font-weight: 800; color: var(--primary); white-space: nowrap; }
+
+    .select-dropdown {
       padding: 8px 16px; border-radius: 99px; border: 1px solid var(--border);
       background: #f8fafc; font-weight: 700; font-size: 0.85rem; color: var(--primary); outline: none; cursor: pointer;
     }
 
-    /* Grid Container */
+    /* Container & Grid */
     .main-container { max-width: 1280px; margin: 30px auto; padding: 0 20px; }
 
-    .section-header {
-      font-size: 1.4rem; font-weight: 800; color: var(--primary); margin: 25px 0 15px;
-      border-bottom: 2px solid var(--border); padding-bottom: 8px;
+    .brand-section-header {
+      font-size: 1.4rem; font-weight: 800; color: var(--primary); margin: 30px 0 15px;
+      border-bottom: 2px solid var(--border); padding-bottom: 8px; display: flex; justify-content: space-between; align-items: center;
     }
 
     .grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;
     }
 
-    /* Cards de Producto */
+    /* Cards */
     .card {
       background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
       padding: 18px; display: flex; flex-direction: column; justify-content: space-between;
@@ -105,9 +107,9 @@
     }
 
     .sku { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; }
-    .title { font-size: 1rem; font-weight: 700; color: var(--primary); margin: 4px 0 12px; line-height: 1.3; }
+    .title { font-size: 1.02rem; font-weight: 700; color: var(--primary); margin: 4px 0 12px; line-height: 1.3; }
 
-    /* Switch Presentación */
+    /* Switch Presentación (Caja x20 vs Unidad) */
     .switch-box {
       display: flex; background: #f1f5f9; padding: 3px; border-radius: 8px; margin-bottom: 12px;
     }
@@ -119,8 +121,8 @@
 
     .switch-btn.active { background: white; color: var(--primary); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
 
-    .price-box { background: #f8fafc; border-radius: 10px; padding: 10px; margin-bottom: 14px; }
-    .p-row { display: flex; justify-content: space-between; font-size: 0.82rem; padding: 3px 0; }
+    .price-box { background: #f8fafc; border-radius: 10px; padding: 12px; margin-bottom: 14px; }
+    .p-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 3px 0; }
     .p-label { color: var(--text-muted); font-weight: 600; }
     .p-val { font-weight: 800; color: var(--primary); }
     .p-val.mayor { color: var(--accent); }
@@ -132,7 +134,7 @@
 
     .btn-add:hover { background: #1d4ed8; }
 
-    /* Cart Drawer */
+    /* Cart Drawer Modal */
     .drawer {
       position: fixed; top: 0; right: -400px; width: 100%; max-width: 380px; height: 100vh;
       background: white; border-left: 1px solid var(--border); z-index: 200; padding: 20px;
@@ -144,7 +146,7 @@
 </head>
 <body>
 
-  <!-- Top Navigation -->
+  <!-- Top Bar Navbar -->
   <header>
     <div class="nav-container">
       <a href="#" class="brand-logo">TATTOO <span>CONCEPT</span></a>
@@ -152,7 +154,7 @@
         <a href="https://wa.me/573215893452?text=Hola,%20quisiera%20contacto%20directo%20con%20un%20asesor." target="_blank" class="btn-action btn-ws">
           💬 Contacto por WhatsApp
         </a>
-        <button class="btn-action btn-ai" onclick="alert('🤖 Asistente Virtual: ¿Qué insumo o referencia buscas hoy?')">
+        <button class="btn-action btn-ai" onclick="alert('🤖 Asistente Virtual: ¿En qué categoría o marca necesitas recomendación hoy?')">
           ✨ Asistente Virtual
         </button>
         <button class="btn-action btn-cart" onclick="toggleCart()">🛒 (<span id="cartCount">0</span>)</button>
@@ -160,22 +162,36 @@
     </div>
   </header>
 
-  <!-- Hero Banner Introducción -->
+  <!-- Hero Intro -->
   <div class="hero-banner">
-    <h1>Insumos Profesionales para Tatuaje</h1>
-    <p>Explora nuestro catálogo interactivo con existencias en tiempo real, precios por caja o unidad y asesoría directa.</p>
+    <h1>Bienvenidos a Tattoo Concept</h1>
+    <p>Somos tu distribuidor aliado en insumos profesionales para tatuaje. Consulta existencias reales de cartuchos, agujas, tintas y máquinas con precios actualizados al detal y por mayor.</p>
     <div class="search-wrapper">
-      <input type="text" id="searchInput" placeholder="Buscar por referencia (ej: ACPR018) o producto..." oninput="render()">
+      <input type="text" id="searchInput" placeholder="Buscar por referencia (ej: ACPR018) o nombre del producto..." oninput="render()">
     </div>
   </div>
 
-  <!-- Menú Desplegable por Marca -->
-  <div class="brand-menu-bar">
-    <div class="menu-container">
-      <label style="font-size:0.85rem; font-weight:800; color:var(--primary);">Filtrar por Marca:</label>
-      <select id="brandSelect" class="dropdown-select" onchange="render()">
-        <option value="TODAS">Ver Todas las Marcas</option>
-      </select>
+  <!-- Barra de Filtros Desplegables (Categorías y Marcas) -->
+  <div class="filter-bar">
+    <div class="filter-container">
+      <div class="filter-group">
+        <label>Categoría:</label>
+        <select id="catSelect" class="select-dropdown" onchange="render()">
+          <option value="TODAS">Todas las Categorías</option>
+          <option value="AGUJAS Y CARTUCHOS">Agujas y Cartuchos</option>
+          <option value="TINTAS">Tintas</option>
+          <option value="MAQUINAS">Máquinas</option>
+          <option value="FUENTES Y BATERIAS">Fuentes y Baterías</option>
+          <option value="VARIOS">Cuidados y Varios</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Marca:</label>
+        <select id="brandSelect" class="select-dropdown" onchange="render()">
+          <option value="TODAS">Todas las Marcas</option>
+        </select>
+      </div>
     </div>
   </div>
 
@@ -207,40 +223,40 @@
     let statePres = {};
     let carrito = [];
 
-    // Función universal para obtener todos los productos de la DB
-    function getTodosLosProductos() {
-      let lista = [];
-      if (typeof DB === 'undefined') return lista;
+    // Helper universal para procesar los productos de DB
+    function getEstructuraData() {
+      let items = [];
+      if (typeof DB === 'undefined') return items;
 
       for (let secKey in DB) {
-        let sec = DB[secKey];
-        if (Array.isArray(sec)) {
-          sec.forEach(p => lista.push(p));
-        } else if (typeof sec === 'object') {
-          for (let subKey in sec) {
-            let sub = sec[subKey];
-            if (Array.isArray(sub)) {
-              sub.forEach(p => lista.push(p));
-            }
+        for (let brandKey in DB[secKey]) {
+          const prods = DB[secKey][brandKey];
+          if (Array.isArray(prods)) {
+            prods.forEach(p => {
+              items.push({
+                ...p,
+                categoria: secKey,
+                marca: brandKey
+              });
+            });
           }
         }
       }
-      return lista;
+      return items;
     }
 
     function init() {
-      cargarOpcionesMenu();
+      cargarOpcionesMarcas();
       render();
     }
 
-    function cargarOpcionesMenu() {
+    function cargarOpcionesMarcas() {
       const select = document.getElementById('brandSelect');
-      const todos = getTodosLosProductos();
+      const todos = getEstructuraData();
       let marcas = [];
 
       todos.forEach(p => {
-        let b = p.b || p.marca || 'Otras Marcas';
-        if (!marcas.includes(b)) marcas.push(b);
+        if (!marcas.includes(p.marca)) marcas.push(p.marca);
       });
 
       marcas.sort().forEach(m => {
@@ -254,23 +270,26 @@
     function render() {
       const main = document.getElementById('mainContainer');
       const search = document.getElementById('searchInput').value.toLowerCase().trim();
+      const catSel = document.getElementById('catSelect').value;
       const brandSel = document.getElementById('brandSelect').value;
       main.innerHTML = '';
 
-      const todos = getTodosLosProductos();
+      const todos = getEstructuraData();
 
-      // Agrupar por Marca
+      // Agrupar por marca
       let agrupados = {};
 
       todos.forEach(p => {
-        const marca = p.b || p.marca || 'Otras Marcas';
-        if (brandSel !== 'TODAS' && marca !== brandSel) return;
-
+        // Filtro Categoria
+        if (catSel !== 'TODAS' && !p.categoria.toUpperCase().includes(catSel.toUpperCase())) return;
+        // Filtro Marca
+        if (brandSel !== 'TODAS' && p.marca !== brandSel) return;
+        // Buscador
         const matchSearch = (p.n && p.n.toLowerCase().includes(search)) || (p.s && p.s.toLowerCase().includes(search));
         if (!matchSearch) return;
 
-        if (!agrupados[marca]) agrupados[marca] = [];
-        agrupados[marca].push(p);
+        if (!agrupados[p.marca]) agrupados[p.marca] = [];
+        agrupados[p.marca].push(p);
       });
 
       let totalMostrados = 0;
@@ -281,7 +300,7 @@
 
         const secEl = document.createElement('div');
         const gridId = `grid-${marca.replace(/[^a-zA-Z0-9]/g, '')}`;
-        secEl.innerHTML = `<div class="section-header">${marca}</div><div class="grid" id="${gridId}"></div>`;
+        secEl.innerHTML = `<div class="brand-section-header"><span>${marca}</span></div><div class="grid" id="${gridId}"></div>`;
         main.appendChild(secEl);
 
         const grid = document.getElementById(gridId);
@@ -352,7 +371,7 @@
     function toggleCart() { document.getElementById('cartDrawer').classList.toggle('open'); }
 
     function agregar(sku) {
-      const todos = getTodosLosProductos();
+      const todos = getEstructuraData();
       const pObj = todos.find(i => i.s === sku);
       if (!pObj) return;
 
