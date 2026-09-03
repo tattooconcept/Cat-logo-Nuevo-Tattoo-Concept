@@ -16,7 +16,6 @@
   --text-main: #0f172a;
   --text-muted: #475569;
   --primary: #0f172a;
-  --primary-accent: #1e293b;
   --accent-blue: #2563eb;
   --gold: #d97706;
   --gold-bg: #fffbeb;
@@ -55,7 +54,7 @@ body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(
 .btn-outline-white { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
 .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
 
-/* Information Section / About Industry */
+/* Information Section */
 .info-section { max-width: 1200px; margin: -40px auto 40px; padding: 0 20px; position: relative; z-index: 10; }
 .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .info-card { background: #fff; padding: 28px; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow-card); }
@@ -91,10 +90,10 @@ body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(
 .product-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow-card); }
 .product-sku { font-size: 0.65rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
 .product-name { font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
-.stock-tag { font-size: 0.7rem; color: var(--success); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-bottom: 12px; }
 
 .price-box { background: var(--gold-bg); border-radius: 8px; padding: 10px; margin-bottom: 12px; border: 1px solid #fef3c7; }
-.price-row { display: flex; justify-content: space-between; align-items: center; }
+.price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+.price-row:last-child { margin-bottom: 0; }
 .price-label { font-size: 0.68rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
 .price-val { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; color: var(--primary); }
 
@@ -145,9 +144,12 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
   <a href="#" class="nav-logo">Tattoo <span>Concept</span></a>
   <ul class="nav-links">
     <li><a href="#cartuchos">Cartuchos</a></li>
+    <li><a href="#agujas">Agujas</a></li>
     <li><a href="#tintas">Tintas</a></li>
     <li><a href="#maquinas">Máquinas</a></li>
     <li><a href="#equipos">Equipos</a></li>
+    <li><a href="#cuidado">Cuidado</a></li>
+    <li><a href="#accesorios">Accesorios</a></li>
   </ul>
   <div class="cart-icon" onclick="toggleCart()">
     <i class="fas fa-shopping-bag"></i>
@@ -165,7 +167,6 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
   </div>
 </section>
 
-<!-- Sección Introductoria del Mundo del Tatuaje -->
 <section class="info-section">
   <div class="info-grid">
     <div class="info-card">
@@ -181,7 +182,7 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
     <div class="info-card">
       <i class="fas fa-truck-fast"></i>
       <h3>Envíos e Inventario Real</h3>
-      <p>Despachos inmediatos a nivel nacional con verificación de disponibilidad de stock antes de confirmar cada orden.</p>
+      <p>Despachos inmediatos a nivel nacional con verificación de disponibilidad antes de confirmar cada orden.</p>
     </div>
   </div>
 </section>
@@ -189,7 +190,7 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
 <section class="section" id="cartuchos">
   <div class="section-header">
     <div class="section-tag">Alta Precisión Quirúrgica</div>
-    <h2 class="section-title">Cartuchos & Agujas</h2>
+    <h2 class="section-title">Cartuchos</h2>
   </div>
   <div class="search-bar">
     <i class="fas fa-search"></i>
@@ -198,10 +199,22 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
   <div id="cartuchos-brands"></div>
 </section>
 
+<section class="section" id="agujas">
+  <div class="section-header">
+    <div class="section-tag">Tradición & Perforación</div>
+    <h2 class="section-title">Agujas Tradicionales</h2>
+  </div>
+  <div id="agujas-brands"></div>
+</section>
+
 <section class="section" id="tintas">
   <div class="section-header">
     <div class="section-tag">Pigmentos Homologados</div>
     <h2 class="section-title">Tintas Internacionales</h2>
+  </div>
+  <div class="search-bar">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Buscar color o marca..." onkeyup="filterSection('tintas',this.value)">
   </div>
   <div id="tintas-brands"></div>
 </section>
@@ -209,9 +222,33 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
 <section class="section" id="maquinas">
   <div class="section-header">
     <div class="section-tag">Tecnología Pen & Inalámbrica</div>
-    <h2 class="section-title">Máquinas & Equipos</h2>
+    <h2 class="section-title">Máquinas</h2>
   </div>
   <div id="maquinas-brands"></div>
+</section>
+
+<section class="section" id="equipos">
+  <div class="section-header">
+    <div class="section-tag">Infraestructura Técnica</div>
+    <h2 class="section-title">Equipos & Fuentes</h2>
+  </div>
+  <div id="equipos-brands"></div>
+</section>
+
+<section class="section" id="cuidado">
+  <div class="section-header">
+    <div class="section-tag">Higiene & Aftercare</div>
+    <h2 class="section-title">Cuidado & Stencil</h2>
+  </div>
+  <div id="cuidado-brands"></div>
+</section>
+
+<section class="section" id="accesorios">
+  <div class="section-header">
+    <div class="section-tag">Insumos Complementarios</div>
+    <h2 class="section-title">Accesorios & Mobiliario</h2>
+  </div>
+  <div id="accesorios-brands"></div>
 </section>
 
 <!-- Cart Sidebar -->
@@ -241,7 +278,7 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
       <i class="fas fa-times" style="cursor:pointer" onclick="toggleAI()"></i>
     </div>
     <div class="ai-messages" id="aiMessages">
-      <div class="msg msg-bot">¡Hola! Soy el asistente virtual de Tattoo Concept. Puedes preguntarme si tenemos un producto en stock o consultar precios.</div>
+      <div class="msg msg-bot">¡Hola! Soy el asistente virtual de Tattoo Concept. Puedes preguntarme si tenemos un producto o consultar precios.</div>
     </div>
     <div class="ai-input-area">
       <input type="text" id="aiInput" placeholder="Ej: ¿Hay cartuchos Ilux en stock?" onkeypress="if(event.key==='Enter') sendAIMsg()">
@@ -258,42 +295,11 @@ footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-al
   <p>Ventas al Detal y al por Mayor · Encargado comercial: César Garzón</p>
 </footer>
 
+<!-- 1. Cargamos el catálogo completo desde products.js -->
+<script src="products.js"></script>
+
+<!-- 2. Lógica del sitio web -->
 <script>
-var BRAND_INFO = {
-  "Ilux": "Cartuchos de alta precisión con membrana de seguridad antiderrames.",
-  "WJX": "Estabilización interna avanzada para trazos limpios y firmes.",
-  "Radiant": "Pigmentos orgánicos puros de rápida absorción.",
-  "Dynamic": "La tinta negra estándar de la industria mundial."
-};
-
-// Base de Datos ampliada con indicador de Stock dinámico
-var DB = {
-  cartuchos: {
-    "Ilux": [
-      {n:"Cartuchos Ilux 0801RLHS", s:"ACPR071", p:3750, m:3150, stock: 45},
-      {n:"Cartuchos Ilux 1003RL", s:"ACPR019", p:3750, m:3150, stock: 120},
-      {n:"Cartuchos Ilux 1005RL", s:"ACPR020", p:3750, m:3150, stock: 80}
-    ],
-    "WJX": [
-      {n:"Cartuchos WJX 1003RL", s:"ACWJ095", p:4000, m:3200, stock: 200},
-      {n:"Cartuchos WJX 1005RL", s:"ACWJ096", p:4000, m:3200, stock: 150}
-    ]
-  },
-  tintas: {
-    "Radiant": [
-      {n:"Radiant Real Black 1oz", s:"TIRA200", p:46000, m:36000, stock: 30}
-    ],
-    "Dynamic": [
-      {n:"Dynamic Black 1oz", s:"TIDY010", p:49000, m:38000, stock: 60}
-    ]
-  },
-  maquinas: {
-    "AVA": [
-      {n:"Maquina AVA A2", s:"MQAV010", p:430000, m:330000, stock: 8}
-    ]
-  }
-};
-
 var cart = [];
 
 function fmtP(n) { return '$' + n.toLocaleString('es-CO'); }
@@ -302,20 +308,20 @@ function createCard(p) {
   var esc = p.n.replace(/'/g, "\\'");
   var html = '<div class="product-card" data-name="' + p.n.toUpperCase() + '">';
   html += '<div><div class="product-sku">' + p.s + '</div>';
-  html += '<div class="product-name">' + p.n + '</div>';
-  html += '<div class="stock-tag"><i class="fas fa-check-circle"></i> En Stock (' + p.stock + ' unids)</div></div>';
+  html += '<div class="product-name">' + p.n + '</div></div>';
   html += '<div class="price-box">';
   if(p.p > 0) html += '<div class="price-row"><span class="price-label">Detal</span><span class="price-val">' + fmtP(p.p) + '</span></div>';
   if(p.m > 0) html += '<div class="price-row"><span class="price-label">Mayor (10+)</span><span class="price-val">' + fmtP(p.m) + '</span></div>';
   html += '</div><div class="product-actions">';
-  html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.p + ',1,\'detal\')">+1 Detal</button>';
+  if(p.p > 0) html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.p + ',1,\'detal\')">+1 Detal</button>';
   if(p.m > 0) html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.m + ',10,\'mayor\')">+10 Mayor</button>';
   html += '</div></div>';
   return html;
 }
 
 function renderAll() {
-  var sections = ['cartuchos','tintas','maquinas'];
+  if (typeof DB === 'undefined') return;
+  var sections = ['cartuchos','agujas','tintas','maquinas','equipos','cuidado','accesorios'];
   for(var s=0; s<sections.length; s++) {
     var sec = sections[s];
     var container = document.getElementById(sec + '-brands');
@@ -325,7 +331,7 @@ function renderAll() {
     for(var b=0; b<brands.length; b++) {
       var brand = brands[b];
       var prods = DB[sec][brand];
-      var desc = BRAND_INFO[brand] || "Insumos garantizados.";
+      var desc = (typeof BRAND_INFO !== 'undefined' && BRAND_INFO[brand]) ? BRAND_INFO[brand] : "Insumos profesionales garantizados.";
       var cardsHTML = '';
       for(var p=0; p<prods.length; p++) cardsHTML += createCard(prods[p]);
       html += '<div class="brand-group"><div class="brand-header" onclick="toggleBrand(this)"><div class="brand-info"><div class="brand-logo">' + brand.substring(0,3).toUpperCase() + '</div><div><div class="brand-name">' + brand + '</div><div class="brand-desc">' + desc + '</div></div></div><i class="fas fa-chevron-down"></i></div><div class="brand-products"><div class="product-grid">' + cardsHTML + '</div></div></div>';
@@ -410,7 +416,6 @@ function toggleAI() {
   document.getElementById('aiBox').classList.toggle('open');
 }
 
-// Lógica Inteligente del Asistente Virtual para Escaneo de Stock
 function sendAIMsg() {
   var inp = document.getElementById('aiInput');
   var query = inp.value.trim().toLowerCase();
@@ -425,26 +430,27 @@ function sendAIMsg() {
     var reply = "";
     var found = [];
 
-    // Buscar en la base de datos local
-    for(var sec in DB) {
-      for(var brand in DB[sec]) {
-        DB[sec][brand].forEach(prod => {
-          if(prod.n.toLowerCase().includes(query) || prod.s.toLowerCase().includes(query) || brand.toLowerCase().includes(query)) {
-            found.push(prod);
-          }
-        });
+    if (typeof DB !== 'undefined') {
+      for(var sec in DB) {
+        for(var brand in DB[sec]) {
+          DB[sec][brand].forEach(prod => {
+            if(prod.n.toLowerCase().includes(query) || prod.s.toLowerCase().includes(query) || brand.toLowerCase().includes(query)) {
+              found.push(prod);
+            }
+          });
+        }
       }
     }
 
     if(found.length > 0) {
-      reply = "Sí, tenemos disponibilidad de ese producto. Aquí están los detalles:\n\n";
+      reply = "Sí, tenemos ese producto en el catálogo. Aquí tienes los detalles:\n\n";
       found.slice(0, 3).forEach(p => {
-        reply += "• **" + p.n + "** (SKU: " + p.s + ")\n   Stock: " + p.stock + " unidades | Precio: " + fmtP(p.p) + "\n";
+        reply += "• **" + p.n + "** (SKU: " + p.s + ")\n   Precio: " + fmtP(p.p) + "\n";
       });
     } else if(query.includes('envio') || query.includes('bogota')) {
       reply = "Hacemos envíos inmediatos en Bogotá y a nivel nacional en Colombia.";
     } else {
-      reply = "No encontré un producto con ese nombre exacto en el inventario actual. Puedes consultarme por marcas como 'Ilux', 'WJX' o 'Dynamic'.";
+      reply = "No encontré ese producto exacto. Puedes preguntarme por marcas como 'Ilux', 'WJX' o 'Dynamic'.";
     }
 
     msgs.innerHTML += '<div class="msg msg-bot">' + reply.replace(/\n/g, '<br>') + '</div>';
