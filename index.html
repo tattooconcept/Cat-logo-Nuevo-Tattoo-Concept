@@ -3,164 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tattoo Concept Bogotá - Distribuidor Oficial de Insumos</title>
+<title>Tattoo Concept Bogotá - Supply & Professional Equipment</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root {
-  --bg-main: #f8fafc;
+  --bg-main: #f1f5f9;
   --bg-card: #ffffff;
-  --bg-nav: rgba(255, 255, 255, 0.95);
+  --bg-nav: rgba(15, 23, 42, 0.95);
   --text-main: #0f172a;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
-  --primary: #1e293b;
+  --text-muted: #475569;
+  --primary: #0f172a;
+  --primary-accent: #1e293b;
   --accent-blue: #2563eb;
-  --accent-blue-hover: #1d4ed8;
-  --gold: #b45309;
-  --gold-light: #fef3c7;
+  --gold: #d97706;
+  --gold-bg: #fffbeb;
   --border: #e2e8f0;
-  --border-focus: #cbd5e1;
   --success: #16a34a;
   --whatsapp: #25D366;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+  --shadow-card: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(--text-main); line-height: 1.5; overflow-x: hidden; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-main); color: var(--text-main); line-height: 1.6; }
 
-/* Navbar */
-.navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: var(--bg-nav); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); box-shadow: var(--shadow-sm); }
-.nav-logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; text-decoration: none; }
-.nav-logo span { color: var(--accent-blue); }
-.nav-links { display: flex; gap: 24px; list-style: none; }
-.nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.2s; }
-.nav-links a:hover { color: var(--accent-blue); }
+/* Header & Nav */
+.navbar { position: fixed; top: 0; left: 0; width: 100%; padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: var(--bg-nav); backdrop-filter: blur(10px); color: #fff; }
+.nav-logo { font-family: 'Oswald', sans-serif; font-size: 1.6rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 20px; list-style: none; }
+.nav-links a { color: #cbd5e1; text-decoration: none; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
 
-.cart-icon { position: relative; cursor: pointer; font-size: 1.2rem; color: var(--primary); padding: 8px 12px; background: #f1f5f9; border-radius: 8px; transition: all 0.2s; }
-.cart-icon:hover { background: #e2e8f0; }
-.cart-badge { position: absolute; top: -5px; right: -5px; background: var(--accent-blue); color: #fff; font-size: 0.65rem; font-weight: 700; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.cart-icon { position: relative; cursor: pointer; font-size: 1.1rem; color: #fff; padding: 10px 16px; background: rgba(255,255,255,0.1); border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); }
+.cart-badge { position: absolute; top: -6px; right: -6px; background: var(--gold); color: #fff; font-size: 0.65rem; font-weight: 700; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 
-/* Hero Corporate */
-.hero { padding: 140px 20px 60px; background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); text-align: center; border-bottom: 1px solid var(--border); }
-.hero-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; background: #eff6ff; color: var(--accent-blue); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 20px; margin-bottom: 20px; border: 1px solid #bfdbfe; }
-.hero h1 { font-family: 'Oswald', sans-serif; font-size: 3.2rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; margin-bottom: 15px; }
-.hero h1 span { color: var(--accent-blue); }
-.hero-subtitle { font-size: 1.1rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 25px; font-weight: 400; }
-.hero-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+/* Hero Section */
+.hero { padding: 160px 20px 80px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; text-align: center; position: relative; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; background: rgba(217, 119, 6, 0.15); color: var(--gold); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; border-radius: 20px; margin-bottom: 24px; border: 1px solid rgba(217, 119, 6, 0.3); }
+.hero h1 { font-family: 'Oswald', sans-serif; font-size: 3.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; margin-bottom: 20px; }
+.hero h1 span { color: var(--gold); }
+.hero-subtitle { font-size: 1.15rem; color: #94a3b8; max-width: 750px; margin: 0 auto 30px; font-weight: 300; }
+.hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-.btn { padding: 10px 24px; font-size: 0.85rem; font-weight: 600; border-radius: 6px; cursor: pointer; text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; border: none; }
-.btn-primary { background: var(--accent-blue); color: #fff; }
-.btn-primary:hover { background: var(--accent-blue-hover); box-shadow: var(--shadow-md); }
-.btn-outline { background: #fff; color: var(--primary); border: 1px solid var(--border); }
-.btn-outline:hover { background: #f1f5f9; }
+.btn { padding: 12px 28px; font-size: 0.85rem; font-weight: 700; border-radius: 8px; cursor: pointer; text-decoration: none; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; border: none; }
+.btn-gold { background: var(--gold); color: #fff; }
+.btn-gold:hover { background: #b45309; }
+.btn-outline-white { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); }
 
-/* Metrics Bar */
-.stats-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px 40px; max-width: 1200px; margin: 0 auto; }
-.stat-card { background: var(--bg-card); border: 1px solid var(--border); padding: 20px; border-radius: 10px; text-align: center; box-shadow: var(--shadow-sm); }
-.stat-number { font-family: 'Oswald', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--primary); }
-.stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-top: 4px; }
+/* Information Section / About Industry */
+.info-section { max-width: 1200px; margin: -40px auto 40px; padding: 0 20px; position: relative; z-index: 10; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.info-card { background: #fff; padding: 28px; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow-card); }
+.info-card i { font-size: 2rem; color: var(--gold); margin-bottom: 16px; }
+.info-card h3 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; margin-bottom: 8px; color: var(--primary); text-transform: uppercase; }
+.info-card p { font-size: 0.85rem; color: var(--text-muted); }
 
 /* Catalog Section */
-.section { padding: 50px 20px; max-width: 1300px; margin: 0 auto; }
-.section-header { text-align: center; margin-bottom: 40px; }
-.section-tag { font-size: 0.75rem; color: var(--accent-blue); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; }
+.section { padding: 40px 20px; max-width: 1300px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 30px; }
+.section-tag { font-size: 0.75rem; color: var(--gold); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
 .section-title { font-family: 'Oswald', sans-serif; font-size: 2.2rem; font-weight: 700; color: var(--primary); text-transform: uppercase; }
 
-.search-bar { max-width: 450px; margin: 0 auto 30px; position: relative; }
-.search-bar input { width: 100%; padding: 12px 20px 12px 42px; background: #fff; border: 1px solid var(--border); border-radius: 8px; color: var(--text-main); font-size: 0.9rem; outline: none; transition: border 0.2s; box-shadow: var(--shadow-sm); }
-.search-bar input:focus { border-color: var(--accent-blue); }
-.search-bar i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--text-light); }
+.search-bar { max-width: 500px; margin: 0 auto 30px; position: relative; }
+.search-bar input { width: 100%; padding: 14px 20px 14px 45px; background: #fff; border: 1px solid var(--border); border-radius: 10px; color: var(--text-main); font-size: 0.9rem; outline: none; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+.search-bar i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
 
-/* Brand Accordion Corporate */
-.brand-group { margin-bottom: 16px; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg-card); box-shadow: var(--shadow-sm); }
-.brand-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 24px; cursor: pointer; transition: background 0.2s; background: #fff; }
+/* Brand Accordion */
+.brand-group { margin-bottom: 20px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; box-shadow: var(--shadow-card); }
+.brand-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 28px; cursor: pointer; background: #fff; transition: background 0.2s; }
 .brand-header:hover { background: #f8fafc; }
-.brand-info { display: flex; align-items: center; gap: 16px; }
-.brand-logo { width: 44px; height: 44px; border-radius: 8px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 0.8rem; color: var(--primary); }
-.brand-name { font-family: 'Oswald', sans-serif; font-size: 1.2rem; font-weight: 600; color: var(--primary); text-transform: uppercase; }
-.brand-desc { font-size: 0.78rem; color: var(--text-muted); font-weight: 400; margin-top: 2px; }
-.brand-count { font-size: 0.75rem; background: #f1f5f9; padding: 2px 8px; border-radius: 12px; color: var(--text-muted); font-weight: 600; }
-.brand-toggle { color: var(--text-muted); transition: transform 0.3s; }
-.brand-header.active .brand-toggle { transform: rotate(180deg); color: var(--accent-blue); }
+.brand-info { display: flex; align-items: center; gap: 18px; }
+.brand-logo { width: 48px; height: 48px; border-radius: 10px; background: var(--primary); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 0.9rem; }
+.brand-name { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--primary); text-transform: uppercase; }
+.brand-desc { font-size: 0.8rem; color: var(--text-muted); }
 
-.brand-products { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 24px; background: #fafafa; }
-.brand-products.open { max-height: none; padding: 20px 24px 24px; border-top: 1px solid var(--border); }
+.brand-products { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; padding: 0 28px; background: #f8fafc; }
+.brand-products.open { max-height: none; padding: 24px; border-top: 1px solid var(--border); }
 
-/* Grid & Cards */
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; }
-.product-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 16px; transition: all 0.2s; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-sm); }
-.product-card:hover { border-color: var(--accent-blue); transform: translateY(-2px); box-shadow: var(--shadow-md); }
-.product-sku { font-size: 0.65rem; color: var(--text-light); font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
-.product-name { font-size: 0.85rem; font-weight: 600; color: var(--primary); margin-bottom: 12px; line-height: 1.3; }
+/* Product Cards */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+.product-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s; }
+.product-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow-card); }
+.product-sku { font-size: 0.65rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+.product-name { font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
+.stock-tag { font-size: 0.7rem; color: var(--success); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-bottom: 12px; }
 
-.price-box { background: #f8fafc; border-radius: 6px; padding: 8px 10px; margin-bottom: 12px; border: 1px solid #f1f5f9; }
-.price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
-.price-row:last-child { margin-bottom: 0; }
-.price-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
-.price-val { font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--primary); }
-.price-val.mayor { color: var(--gold); }
+.price-box { background: var(--gold-bg); border-radius: 8px; padding: 10px; margin-bottom: 12px; border: 1px solid #fef3c7; }
+.price-row { display: flex; justify-content: space-between; align-items: center; }
+.price-label { font-size: 0.68rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; }
+.price-val { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; color: var(--primary); }
 
-.product-actions { display: flex; gap: 6px; }
-.btn-cart { flex: 1; padding: 6px 8px; font-size: 0.7rem; font-weight: 600; border-radius: 4px; cursor: pointer; border: 1px solid var(--border); background: #fff; color: var(--primary); transition: all 0.2s; display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
-.btn-cart:hover { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
-.btn-cart.mayor:hover { background: var(--gold); color: #fff; border-color: var(--gold); }
+.product-actions { display: flex; gap: 8px; }
+.btn-cart { flex: 1; padding: 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; cursor: pointer; border: 1px solid var(--border); background: #fff; color: var(--primary); transition: all 0.2s; text-align: center; }
+.btn-cart:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 
 /* Cart Sidebar */
-.cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(4px); z-index: 2000; display: none; }
+.cart-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(4px); z-index: 2000; display: none; }
 .cart-overlay.open { display: block; }
-.cart-sidebar { position: fixed; top: 0; right: -420px; width: 400px; max-width: 90vw; height: 100%; background: #fff; z-index: 2001; transition: right 0.3s ease; display: flex; flex-direction: column; box-shadow: var(--shadow-lg); }
+.cart-sidebar { position: fixed; top: 0; right: -450px; width: 420px; max-width: 90vw; height: 100%; background: #fff; z-index: 2001; transition: right 0.3s ease; display: flex; flex-direction: column; box-shadow: -10px 0 30px rgba(0,0,0,0.1); }
 .cart-sidebar.open { right: 0; }
-.cart-header { padding: 20px 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-.cart-header h3 { font-family: 'Oswald', sans-serif; font-size: 1.2rem; color: var(--primary); text-transform: uppercase; }
-.cart-close { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
+.cart-header { padding: 24px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--primary); color: #fff; }
+.cart-header h3 { font-family: 'Oswald', sans-serif; font-size: 1.3rem; text-transform: uppercase; }
 
-.cart-items { flex: 1; overflow-y: auto; padding: 20px 24px; }
+.cart-items { flex: 1; overflow-y: auto; padding: 24px; }
 .cart-item { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: center; }
-.cart-item-badge { font-size: 0.6rem; font-weight: 700; padding: 4px 6px; border-radius: 4px; text-transform: uppercase; background: #e2e8f0; color: var(--primary); }
-.cart-item-badge.mayor { background: var(--gold-light); color: var(--gold); }
 .cart-item-info { flex: 1; }
-.cart-item-name { font-size: 0.8rem; font-weight: 600; color: var(--primary); }
-.cart-item-price { font-size: 0.75rem; color: var(--text-muted); }
-.cart-item-qty { display: flex; align-items: center; gap: 6px; }
-.qty-btn { width: 22px; height: 22px; border-radius: 4px; border: 1px solid var(--border); background: #fff; cursor: pointer; font-size: 0.75rem; }
+.cart-item-name { font-size: 0.82rem; font-weight: 600; color: var(--primary); }
+.cart-item-price { font-size: 0.78rem; color: var(--text-muted); }
 
-.cart-footer { padding: 20px 24px; border-top: 1px solid var(--border); background: #f8fafc; }
-.cart-total { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-.cart-total-amount { font-family: 'Oswald', sans-serif; font-size: 1.5rem; color: var(--primary); font-weight: 700; }
+.cart-footer { padding: 24px; border-top: 1px solid var(--border); background: #f8fafc; }
+.cart-total { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.cart-total-amount { font-family: 'Oswald', sans-serif; font-size: 1.6rem; color: var(--primary); font-weight: 700; }
 
-/* AI Assistant Floating Widget */
+/* AI Assistant */
 .ai-widget { position: fixed; bottom: 25px; left: 25px; z-index: 1500; }
-.ai-trigger { width: 50px; height: 50px; border-radius: 50%; background: var(--accent-blue); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; box-shadow: var(--shadow-lg); cursor: pointer; border: none; transition: transform 0.2s; }
-.ai-trigger:hover { transform: scale(1.05); }
-.ai-box { position: absolute; bottom: 65px; left: 0; width: 320px; height: 420px; background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow-lg); display: none; flex-direction: column; overflow: hidden; }
+.ai-trigger { width: 54px; height: 54px; border-radius: 50%; background: var(--primary); color: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2); cursor: pointer; border: none; }
+.ai-box { position: absolute; bottom: 65px; left: 0; width: 340px; height: 450px; background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); display: none; flex-direction: column; overflow: hidden; }
 .ai-box.open { display: flex; }
-.ai-header { padding: 12px 16px; background: var(--primary); color: #fff; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 600; }
-.ai-messages { flex: 1; padding: 12px; overflow-y: auto; font-size: 0.8rem; display: flex; flex-direction: column; gap: 8px; background: #f8fafc; }
-.msg { padding: 8px 12px; border-radius: 8px; max-width: 85%; }
+.ai-header { padding: 14px 18px; background: var(--primary); color: #fff; display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 600; }
+.ai-messages { flex: 1; padding: 14px; overflow-y: auto; font-size: 0.8rem; display: flex; flex-direction: column; gap: 10px; background: #f8fafc; }
+.msg { padding: 10px 14px; border-radius: 8px; max-width: 88%; line-height: 1.4; }
 .msg-bot { background: #fff; border: 1px solid var(--border); align-self: flex-start; color: var(--primary); }
-.msg-user { background: var(--accent-blue); color: #fff; align-self: flex-end; }
+.msg-user { background: var(--primary); color: #fff; align-self: flex-end; }
 .ai-input-area { display: flex; border-top: 1px solid var(--border); background: #fff; }
-.ai-input-area input { flex: 1; border: none; padding: 10px; font-size: 0.8rem; outline: none; }
-.ai-input-area button { border: none; background: transparent; padding: 0 12px; color: var(--accent-blue); cursor: pointer; }
+.ai-input-area input { flex: 1; border: none; padding: 12px; font-size: 0.82rem; outline: none; }
+.ai-input-area button { border: none; background: transparent; padding: 0 14px; color: var(--primary); cursor: pointer; font-size: 1rem; }
 
-/* Floating WhatsApp */
-.whatsapp-float { position: fixed; bottom: 25px; right: 25px; width: 50px; height: 50px; background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #fff; box-shadow: var(--shadow-lg); z-index: 1500; text-decoration: none; }
+.whatsapp-float { position: fixed; bottom: 25px; right: 25px; width: 54px; height: 54px; background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #fff; box-shadow: 0 10px 25px rgba(37,211,102,0.3); z-index: 1500; text-decoration: none; }
 
-footer { background: var(--primary); color: #fff; padding: 40px 20px; text-align: center; font-size: 0.8rem; border-top: 1px solid var(--border); }
-footer a { color: var(--accent-blue); text-decoration: none; }
-
-@media(max-width: 768px) {
-  .navbar { padding: 12px 20px; }
-  .nav-links { display: none; }
-  .hero h1 { font-size: 2.2rem; }
-  .section { padding: 30px 15px; }
-}
+footer { background: var(--primary); color: #94a3b8; padding: 50px 20px; text-align: center; font-size: 0.85rem; }
 </style>
 </head>
 <body>
@@ -169,12 +145,9 @@ footer a { color: var(--accent-blue); text-decoration: none; }
   <a href="#" class="nav-logo">Tattoo <span>Concept</span></a>
   <ul class="nav-links">
     <li><a href="#cartuchos">Cartuchos</a></li>
-    <li><a href="#agujas">Agujas</a></li>
     <li><a href="#tintas">Tintas</a></li>
     <li><a href="#maquinas">Máquinas</a></li>
     <li><a href="#equipos">Equipos</a></li>
-    <li><a href="#cuidado">Cuidado</a></li>
-    <li><a href="#accesorios">Accesorios</a></li>
   </ul>
   <div class="cart-icon" onclick="toggleCart()">
     <i class="fas fa-shopping-bag"></i>
@@ -183,112 +156,70 @@ footer a { color: var(--accent-blue); text-decoration: none; }
 </nav>
 
 <section class="hero">
-  <div class="hero-badge"><i class="fas fa-check-circle"></i> Distribuidor Oficial Bogotá</div>
-  <h1>Catálogo Corporativo <span>Insumos Tattoo</span></h1>
-  <p class="hero-subtitle">Plataforma B2B y Ventas al Detal con suministro directo para estudios y profesionales. Encargado: César Garzón.</p>
+  <div class="hero-badge"><i class="fas fa-certificate"></i> Distribución Oficial & Suministros B2B</div>
+  <h1>El Estándar Profesional en <span>Insumos para Tatuar</span></h1>
+  <p class="hero-subtitle">Importación directa y distribución nacional de equipos, bioseguridad y pigmentos certificados para artistas del tatuaje. Gestión comercial: César Garzón.</p>
   <div class="hero-buttons">
-    <a href="#cartuchos" class="btn btn-primary"><i class="fas fa-boxes-stacked"></i> Explorar Catálogo</a>
-    <a href="https://wa.me/573044298924" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> Contactar Asesor</a>
+    <a href="#cartuchos" class="btn btn-gold"><i class="fas fa-boxes-stacked"></i> Ver Catálogo Completo</a>
+    <a href="https://wa.me/573044298924" class="btn btn-outline-white" target="_blank"><i class="fab fa-whatsapp"></i> Contactar Asesor Directo</a>
   </div>
 </section>
 
-<div class="stats-bar">
-  <div class="stat-card">
-    <div class="stat-number">600+</div>
-    <div class="stat-label">Referencias Disponibles</div>
+<!-- Sección Introductoria del Mundo del Tatuaje -->
+<section class="info-section">
+  <div class="info-grid">
+    <div class="info-card">
+      <i class="fas fa-shield-halved"></i>
+      <h3>Bioseguridad & Normativa</h3>
+      <p>Suministramos insumos sellados de fábrica que cumplen con las normas sanitarias exigidas para estudios de tatuaje en Colombia.</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-microscope"></i>
+      <h3>Pigmentación Certificada</h3>
+      <p>Representamos marcas reconocidas internacionalmente como Dynamic, Radiant y Eternal con fechas de vencimiento y lote verificado.</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-truck-fast"></i>
+      <h3>Envíos e Inventario Real</h3>
+      <p>Despachos inmediatos a nivel nacional con verificación de disponibilidad de stock antes de confirmar cada orden.</p>
+    </div>
   </div>
-  <div class="stat-card">
-    <div class="stat-number">20+</div>
-    <div class="stat-label">Marcas Internacionales</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number">100%</div>
-    <div class="stat-label">Garantía de Originalidad</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-number">🇨🇴</div>
-    <div class="stat-label">Cobertura Nacional</div>
-  </div>
-</div>
+</section>
 
 <section class="section" id="cartuchos">
   <div class="section-header">
-    <div class="section-tag">Suministros De Alta Precisión</div>
-    <h2 class="section-title">Cartuchos Profesionales</h2>
+    <div class="section-tag">Alta Precisión Quirúrgica</div>
+    <h2 class="section-title">Cartuchos & Agujas</h2>
   </div>
   <div class="search-bar">
     <i class="fas fa-search"></i>
-    <input type="text" placeholder="Buscar por marca o referencia..." onkeyup="filterSection('cartuchos',this.value)">
+    <input type="text" placeholder="Buscar por referencia o SKU..." onkeyup="filterSection('cartuchos',this.value)">
   </div>
   <div id="cartuchos-brands"></div>
 </section>
 
-<section class="section" id="agujas">
-  <div class="section-header">
-    <div class="section-tag">Tradición & Perforación</div>
-    <h2 class="section-title">Agujas Tradicionales</h2>
-  </div>
-  <div id="agujas-brands"></div>
-</section>
-
 <section class="section" id="tintas">
   <div class="section-header">
-    <div class="section-tag">Pigmentación Homologada</div>
-    <h2 class="section-title">Tintas & Sets</h2>
-  </div>
-  <div class="search-bar">
-    <i class="fas fa-search"></i>
-    <input type="text" placeholder="Buscar color o tono..." onkeyup="filterSection('tintas',this.value)">
+    <div class="section-tag">Pigmentos Homologados</div>
+    <h2 class="section-title">Tintas Internacionales</h2>
   </div>
   <div id="tintas-brands"></div>
 </section>
 
 <section class="section" id="maquinas">
   <div class="section-header">
-    <div class="section-tag">Tecnología & Potencia</div>
-    <h2 class="section-title">Máquinas Pen e Inalámbricas</h2>
-  </div>
-  <div class="search-bar">
-    <i class="fas fa-search"></i>
-    <input type="text" placeholder="Buscar máquina..." onkeyup="filterSection('maquinas',this.value)">
+    <div class="section-tag">Tecnología Pen & Inalámbrica</div>
+    <h2 class="section-title">Máquinas & Equipos</h2>
   </div>
   <div id="maquinas-brands"></div>
-</section>
-
-<section class="section" id="equipos">
-  <div class="section-header">
-    <div class="section-tag">Infraestructura Técnica</div>
-    <h2 class="section-title">Fuentes & Termoimpresoras</h2>
-  </div>
-  <div id="equipos-brands"></div>
-</section>
-
-<section class="section" id="cuidado">
-  <div class="section-header">
-    <div class="section-tag">Higiene & Aftercare</div>
-    <h2 class="section-title">Cuidado & Stencil</h2>
-  </div>
-  <div id="cuidado-brands"></div>
-</section>
-
-<section class="section" id="accesorios">
-  <div class="section-header">
-    <div class="section-tag">Insumos Complementarios</div>
-    <h2 class="section-title">Accesorios & Mobiliario</h2>
-  </div>
-  <div class="search-bar">
-    <i class="fas fa-search"></i>
-    <input type="text" placeholder="Buscar accesorio..." onkeyup="filterSection('accesorios',this.value)">
-  </div>
-  <div id="accesorios-brands"></div>
 </section>
 
 <!-- Cart Sidebar -->
 <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
 <div class="cart-sidebar" id="cartSidebar">
   <div class="cart-header">
-    <h3><i class="fas fa-shopping-bag"></i> Pedido Actual</h3>
-    <button class="cart-close" onclick="toggleCart()"><i class="fas fa-times"></i></button>
+    <h3><i class="fas fa-shopping-bag"></i> Resumen de Compra</h3>
+    <i class="fas fa-times" style="cursor:pointer;" onclick="toggleCart()"></i>
   </div>
   <div class="cart-items" id="cartItems"></div>
   <div class="cart-footer">
@@ -296,55 +227,72 @@ footer a { color: var(--accent-blue); text-decoration: none; }
       <span>Total</span>
       <span class="cart-total-amount" id="cartTotal">$0</span>
     </div>
-    <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="sendWhatsApp()">
-      <i class="fab fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+    <button class="btn btn-gold" style="width:100%; justify-content:center; margin-bottom: 10px;" onclick="sendWhatsApp()">
+      <i class="fab fa-whatsapp"></i> Confirmar Pedido por WhatsApp
     </button>
   </div>
 </div>
 
-<!-- AI Assistant Floating Widget -->
+<!-- AI Assistant -->
 <div class="ai-widget">
   <div class="ai-box" id="aiBox">
     <div class="ai-header">
-      <span><i class="fas fa-robot"></i> Asistente Tattoo Concept</span>
+      <span><i class="fas fa-robot"></i> Asistente de Inventario IA</span>
       <i class="fas fa-times" style="cursor:pointer" onclick="toggleAI()"></i>
     </div>
     <div class="ai-messages" id="aiMessages">
-      <div class="msg msg-bot">¡Hola! Soy tu asistente virtual. ¿En qué te puedo ayudar con el catálogo o compras al por mayor?</div>
+      <div class="msg msg-bot">¡Hola! Soy el asistente virtual de Tattoo Concept. Puedes preguntarme si tenemos un producto en stock o consultar precios.</div>
     </div>
     <div class="ai-input-area">
-      <input type="text" id="aiInput" placeholder="Pregunta sobre productos o precios..." onkeypress="if(event.key==='Enter') sendAIMsg()">
+      <input type="text" id="aiInput" placeholder="Ej: ¿Hay cartuchos Ilux en stock?" onkeypress="if(event.key==='Enter') sendAIMsg()">
       <button onclick="sendAIMsg()"><i class="fas fa-paper-plane"></i></button>
     </div>
   </div>
-  <button class="ai-trigger" onclick="toggleAI()"><i class="fas fa-comment-dots"></i></button>
+  <button class="ai-trigger" onclick="toggleAI()"><i class="fas fa-robot"></i></button>
 </div>
 
 <a href="https://wa.me/573044298924" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 <footer>
   <p>© 2026 Tattoo Concept Bogotá. Todos los derechos reservados.</p>
-  <p>Atención directa y asesoría comercial: César Garzón</p>
+  <p>Ventas al Detal y al por Mayor · Encargado comercial: César Garzón</p>
 </footer>
 
 <script>
-// Base de Descripciones Automáticas de Marcas
 var BRAND_INFO = {
-  "Ilux": "Marca especializada en cartuchos con membrana de alta seguridad y afilado de precisión quirúrgica.",
-  "Ronin": "Cartuchos ergonómicos y estables diseñados para sesiones extensas de línea y sombra.",
-  "WJX": "Referente global en cartuchos con sistema de estabilización interna de aguja antibamboleo.",
-  "WJX Ultimate": "Línea premium de WJX fabricada con policarbonato de grado médico y máximo flujo de tinta.",
-  "Radiant": "Tintas homologadas de alta pureza con pigmentos orgánicos de rápida fijación en piel.",
-  "Dynamic": "Marca líder indiscutible en tintas negras intensas y tonos blancos de alta densidad.",
-  "Eternal": "Gama profesional de pigmentos libres de acrílicos, ampliamente utilizada a nivel internacional.",
-  "World Famous": "Pigmentos veganos de gran fluidez y consistencia con excelente durabilidad en el sanado.",
-  "Starbrite": "Tintas tradicionales americanas destacadas por su brillo y vitalidad de color.",
-  "AVA": "Maquinaria rotativa e inalámbrica con motores de alta precisión para todo tipo de estilos.",
-  "Bronc": "Equipos de ingeniería avanzada con sistemas de voltaje regulado e interfaz intuitiva.",
-  "Gear": "Máquinas y fuentes de poder compactas orientadas a ofrecer un rendimiento continuo y estable."
+  "Ilux": "Cartuchos de alta precisión con membrana de seguridad antiderrames.",
+  "WJX": "Estabilización interna avanzada para trazos limpios y firmes.",
+  "Radiant": "Pigmentos orgánicos puros de rápida absorción.",
+  "Dynamic": "La tinta negra estándar de la industria mundial."
 };
 
-var DB={cartuchos:{"Ilux":[{n:"Cartuchos Ilux 0801RLHS",s:"ACPR071",p:3750,m:3150},{n:"Cartuchos Ilux 0803RLHS",s:"ACPR018",p:3750,m:3150},{n:"Cartuchos Ilux 1003RL",s:"ACPR019",p:3750,m:3150},{n:"Cartuchos Ilux 1005CM",s:"ACPR025",p:3750,m:3150},{n:"Cartuchos Ilux 1005RL",s:"ACPR020",p:3750,m:3150},{n:"Cartuchos Ilux 1007CM",s:"ACPR026",p:3750,m:3250},{n:"Cartuchos Ilux 1007M",s:"ACPR034",p:3750,m:3250},{n:"Cartuchos Ilux 1007RL",s:"ACPR021",p:3750,m:3250},{n:"Cartuchos Ilux 1009CM",s:"ACPR027",p:3750,m:3250},{n:"Cartuchos Ilux 1009M",s:"ACPR035",p:3750,m:3250},{n:"Cartuchos Ilux 1009RL",s:"ACPR022",p:3750,m:3250},{n:"Cartuchos Ilux 1011CM",s:"ACPR028",p:3750,m:3500},{n:"Cartuchos Ilux 1011M",s:"ACPR036",p:3750,m:3500},{n:"Cartuchos Ilux 1011RL",s:"ACPR023",p:3750,m:3500},{n:"Cartuchos Ilux 1013CM",s:"ACPR029",p:3750,m:3500},{n:"Cartuchos Ilux 1013M",s:"ACPR037",p:3750,m:3500},{n:"Cartuchos Ilux 1014RL",s:"ACPR024",p:3750,m:3500},{n:"Cartuchos Ilux 1015CM",s:"ACPR030",p:3750,m:3500},{n:"Cartuchos Ilux 1015M",s:"ACPR038",p:3750,m:3500},{n:"Cartuchos Ilux 1017CM",s:"ACPR031",p:3750,m:3700},{n:"Cartuchos Ilux 1023CM",s:"ACPR032",p:4250,m:3800},{n:"Cartuchos Ilux 1027CM",s:"ACPR033",p:4250,m:3800},{n:"Cartuchos Ilux 1201RL",s:"ACPR017",p:3750,m:3150},{n:"Cartuchos Ilux 1205RS",s:"ACPR040",p:3750,m:3150},{n:"Cartuchos Ilux 1207RS",s:"ACPR041",p:3750,m:3150},{n:"Cartuchos Ilux 1209RS",s:"ACPR042",p:3750,m:3250},{n:"Cartuchos Ilux 1211RS",s:"ACPR077",p:3750,m:3500},{n:"Cartuchos Ilux 1214RS",s:"ACPR043",p:3750,m:3500},{n:"Cartuchos Ilux 1239CM x8",s:"ACWJ134",p:10000,m:9625},{n:"Cartuchos Ilux 1249CM x8",s:"ACWJ135",p:10625,m:9625}],"Ronin":[{n:"Cartuchos Ronin 0803RLHS",s:"ACPR070",p:3150,m:2750},{n:"Cartuchos Ronin 1003RL",s:"ACPR044",p:3150,m:2750},{n:"Cartuchos Ronin 1005CM",s:"ACPR061",p:3150,m:2750},{n:"Cartuchos Ronin 1005RL",s:"ACPR045",p:3150,m:2750},{n:"Cartuchos Ronin 1007CM",s:"ACPR062",p:3150,m:2750},{n:"Cartuchos Ronin 1007M",s:"ACPR046",p:3150,m:2750},{n:"Cartuchos Ronin 1007RL",s:"ACPR047",p:3150,m:2750},{n:"Cartuchos Ronin 1009CM",s:"ACPR063",p:3150,m:2750},{n:"Cartuchos Ronin 1009M",s:"ACPR048",p:3150,m:2750},{n:"Cartuchos Ronin 1009RL",s:"ACPR049",p:3150,m:2750},{n:"Cartuchos Ronin 1011CM",s:"ACPR064",p:3150,m:2750},{n:"Cartuchos Ronin 1011M",s:"ACPR050",p:3150,m:2750},{n:"Cartuchos Ronin 1011RL",s:"ACPR051",p:3150,m:2750},{n:"Cartuchos Ronin 1013CM",s:"ACPR065",p:3150,m:2750},{n:"Cartuchos Ronin 1013M",s:"ACPR052",p:3150,m:2750},{n:"Cartuchos Ronin 1014RL",s:"ACPR053",p:3150,m:2750},{n:"Cartuchos Ronin 1015CM",s:"ACPR066",p:3150,m:2750},{n:"Cartuchos Ronin 1015M",s:"ACPR054",p:3150,m:2750},{n:"Cartuchos Ronin 1017CM",s:"ACPR067",p:3150,m:2750},{n:"Cartuchos Ronin 1017M",s:"ACPR055",p:3150,m:2750},{n:"Cartuchos Ronin 1023CM",s:"ACPR068",p:3150,m:2750},{n:"Cartuchos Ronin 1023M",s:"ACPR056",p:3150,m:2750},{n:"Cartuchos Ronin 1027CM",s:"ACPR069",p:3150,m:2750},{n:"Cartuchos Ronin 1205RS",s:"ACPR057",p:3150,m:2750},{n:"Cartuchos Ronin 1207RS",s:"ACPR058",p:3150,m:2750},{n:"Cartuchos Ronin 1209RS",s:"ACPR059",p:3150,m:2750},{n:"Cartuchos Ronin 1211RS",s:"ACWJ175",p:3150,m:2750},{n:"Cartuchos Ronin 1214RS",s:"ACPR060",p:3150,m:2750}],"WJX":[{n:"Cartuchos WJX 0603RL",s:"ACWJ163",p:4000,m:3200},{n:"Cartuchos WJX 0803RL",s:"ACWJ094",p:4000,m:3200},{n:"Cartuchos WJX 0805RL",s:"ACWJ162",p:4000,m:3200},{n:"Cartuchos WJX 1001RL",s:"ACWJ093",p:4000,m:3200},{n:"Cartuchos WJX 1003RL",s:"ACWJ095",p:4000,m:3200},{n:"Cartuchos WJX 1005RL",s:"ACWJ096",p:4000,m:3200},{n:"Cartuchos WJX 1007M",s:"ACWJ164",p:4000,m:3300},{n:"Cartuchos WJX 1007RL",s:"ACWJ097",p:4000,m:3300},{n:"Cartuchos WJX 1007RM",s:"ACWJ101",p:4000,m:3300},{n:"Cartuchos WJX 1007RS",s:"ACWJ109",p:4000,m:3300},{n:"Cartuchos WJX 1009M",s:"ACWJ165",p:4000,m:3300},{n:"Cartuchos WJX 1009RL",s:"ACWJ098",p:4000,m:3300},{n:"Cartuchos WJX 1009RM",s:"ACWJ102",p:4000,m:3300},{n:"Cartuchos WJX 1009RS",s:"ACWJ110",p:4000,m:3300},{n:"Cartuchos WJX 1011M",s:"ACWJ166",p:4000,m:3600},{n:"Cartuchos WJX 1011RL",s:"ACWJ099",p:4000,m:3600},{n:"Cartuchos WJX 1011RM",s:"ACWJ103",p:4000,m:3600},{n:"Cartuchos WJX 1011RS",s:"ACWJ111",p:4000,m:3600},{n:"Cartuchos WJX 1013M",s:"ACWJ167",p:4000,m:3600},{n:"Cartuchos WJX 1013RM",s:"ACWJ104",p:4000,m:3600},{n:"Cartuchos WJX 1014RL",s:"ACWJ100",p:4000,m:3600},{n:"Cartuchos WJX 1014RS",s:"ACWJ112",p:4000,m:3600},{n:"Cartuchos WJX 1015M",s:"ACWJ168",p:4000,m:3600},{n:"Cartuchos WJX 1015RM",s:"ACWJ105",p:4000,m:3600},{n:"Cartuchos WJX 1017M",s:"ACWJ176",p:4250,m:3750},{n:"Cartuchos WJX 1017RM",s:"ACWJ106",p:4250,m:3750},{n:"Cartuchos WJX 1019RM",s:"ACWJ131",p:4250,m:3850},{n:"Cartuchos WJX 1021RM",s:"ACWJ132",p:4250,m:3850},{n:"Cartuchos WJX 1023RM",s:"ACWJ107",p:4250,m:3850},{n:"Cartuchos WJX 1025RM",s:"ACWJ133",p:4500,m:4200},{n:"Cartuchos WJX 1027RM",s:"ACWJ108",p:4500,m:4100}]},"agujas":{"Agujas Tradicionales":[{n:"Agujas 1003RL",s:"ACEX004",p:600},{n:"Agujas 1207M",s:"ACEX012",p:600},{n:"Agujas 1215M",s:"ACEX016",p:600}]},"tintas":{"Radiant 1oz":[{n:"Radiant Real Black 1oz",s:"TIRA200",p:46000,m:36000},{n:"Radiant Turbo Black 1oz",s:"TIRA228",p:46000,m:36000}],"Dynamic 1oz":[{n:"Dynamic Black 1oz",s:"TIDY010",p:49000,m:38000},{n:"Dynamic Triple Black 1oz",s:"TIDY008",p:54000,m:42000}]},"maquinas":{"AVA":[{n:"Maquina AVA A2",s:"MQAV010",p:430000,m:330000},{n:"Maquina AVA EP8",s:"MQAV001",p:970000,m:737200}],"Bronc":[{n:"Maquina Bronc V1",s:"MQGO002",p:790000,m:600000}]},"equipos":{"Fuentes de Poder":[{n:"Fuente Aurora",s:"FBPR001",p:260000,m:210000}]},"cuidado":{"A&D Cremas":[{n:"A&D Pote 150",s:"SNDO003",p:18000}]},"accesorios":{"Grips":[{n:"Grip Aluminio 25mm",s:"VAPR095",p:17000,m:9000}]}};
+// Base de Datos ampliada con indicador de Stock dinámico
+var DB = {
+  cartuchos: {
+    "Ilux": [
+      {n:"Cartuchos Ilux 0801RLHS", s:"ACPR071", p:3750, m:3150, stock: 45},
+      {n:"Cartuchos Ilux 1003RL", s:"ACPR019", p:3750, m:3150, stock: 120},
+      {n:"Cartuchos Ilux 1005RL", s:"ACPR020", p:3750, m:3150, stock: 80}
+    ],
+    "WJX": [
+      {n:"Cartuchos WJX 1003RL", s:"ACWJ095", p:4000, m:3200, stock: 200},
+      {n:"Cartuchos WJX 1005RL", s:"ACWJ096", p:4000, m:3200, stock: 150}
+    ]
+  },
+  tintas: {
+    "Radiant": [
+      {n:"Radiant Real Black 1oz", s:"TIRA200", p:46000, m:36000, stock: 30}
+    ],
+    "Dynamic": [
+      {n:"Dynamic Black 1oz", s:"TIDY010", p:49000, m:38000, stock: 60}
+    ]
+  },
+  maquinas: {
+    "AVA": [
+      {n:"Maquina AVA A2", s:"MQAV010", p:430000, m:330000, stock: 8}
+    ]
+  }
+};
 
 var cart = [];
 
@@ -354,19 +302,20 @@ function createCard(p) {
   var esc = p.n.replace(/'/g, "\\'");
   var html = '<div class="product-card" data-name="' + p.n.toUpperCase() + '">';
   html += '<div><div class="product-sku">' + p.s + '</div>';
-  html += '<div class="product-name">' + p.n + '</div></div>';
+  html += '<div class="product-name">' + p.n + '</div>';
+  html += '<div class="stock-tag"><i class="fas fa-check-circle"></i> En Stock (' + p.stock + ' unids)</div></div>';
   html += '<div class="price-box">';
   if(p.p > 0) html += '<div class="price-row"><span class="price-label">Detal</span><span class="price-val">' + fmtP(p.p) + '</span></div>';
-  if(p.m > 0) html += '<div class="price-row"><span class="price-label">Mayor (10+)</span><span class="price-val mayor">' + fmtP(p.m) + '</span></div>';
+  if(p.m > 0) html += '<div class="price-row"><span class="price-label">Mayor (10+)</span><span class="price-val">' + fmtP(p.m) + '</span></div>';
   html += '</div><div class="product-actions">';
-  if(p.p > 0) html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.p + ',1,\'detal\')">+1 Detal</button>';
-  if(p.m > 0) html += '<button class="btn-cart mayor" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.m + ',10,\'mayor\')">+10 Mayor</button>';
+  html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.p + ',1,\'detal\')">+1 Detal</button>';
+  if(p.m > 0) html += '<button class="btn-cart" onclick="addToCart(\'' + esc + '\',\'' + p.s + '\',' + p.m + ',10,\'mayor\')">+10 Mayor</button>';
   html += '</div></div>';
   return html;
 }
 
 function renderAll() {
-  var sections = ['cartuchos','agujas','tintas','maquinas','equipos','cuidado','accesorios'];
+  var sections = ['cartuchos','tintas','maquinas'];
   for(var s=0; s<sections.length; s++) {
     var sec = sections[s];
     var container = document.getElementById(sec + '-brands');
@@ -376,18 +325,16 @@ function renderAll() {
     for(var b=0; b<brands.length; b++) {
       var brand = brands[b];
       var prods = DB[sec][brand];
-      var abbr = brand.substring(0,3).toUpperCase();
-      var desc = BRAND_INFO[brand] || "Insumos profesionales garantizados.";
+      var desc = BRAND_INFO[brand] || "Insumos garantizados.";
       var cardsHTML = '';
       for(var p=0; p<prods.length; p++) cardsHTML += createCard(prods[p]);
-      html += '<div class="brand-group"><div class="brand-header" onclick="toggleBrand(this)"><div class="brand-info"><div class="brand-logo">' + abbr + '</div><div><div class="brand-name">' + brand + '</div><div class="brand-desc">' + desc + '</div></div></div><div style="display:flex;align-items:center;gap:12px;"><span class="brand-count">' + prods.length + ' refs</span><i class="fas fa-chevron-down brand-toggle"></i></div></div><div class="brand-products"><div class="product-grid">' + cardsHTML + '</div></div></div>';
+      html += '<div class="brand-group"><div class="brand-header" onclick="toggleBrand(this)"><div class="brand-info"><div class="brand-logo">' + brand.substring(0,3).toUpperCase() + '</div><div><div class="brand-name">' + brand + '</div><div class="brand-desc">' + desc + '</div></div></div><i class="fas fa-chevron-down"></i></div><div class="brand-products"><div class="product-grid">' + cardsHTML + '</div></div></div>';
     }
     container.innerHTML = html;
   }
 }
 
 function toggleBrand(header) {
-  header.classList.toggle('active');
   header.nextElementSibling.classList.toggle('open');
 }
 
@@ -406,10 +353,7 @@ function filterSection(secId, query) {
       cards[c].style.display = show ? '' : 'none';
       if(show) visible++;
     }
-    if(q.length > 0 && visible > 0) {
-      bg.querySelector('.brand-products').classList.add('open');
-      bg.querySelector('.brand-header').classList.add('active');
-    }
+    if(q.length > 0 && visible > 0) bg.querySelector('.brand-products').classList.add('open');
     bg.style.display = (visible > 0 || q.length === 0) ? '' : 'none';
   }
 }
@@ -429,7 +373,7 @@ function updateCart() {
   var totQty = cart.reduce((a, b) => a + b.q, 0);
   badge.textContent = totQty;
   if(!cart.length) {
-    itemsEl.innerHTML = '<p style="text-align:center; color:var(--text-muted); margin-top:40px;">El carrito está vacío</p>';
+    itemsEl.innerHTML = '<p style="text-align:center; color:var(--text-muted); margin-top:40px;">Tu carrito está vacío</p>';
     totalEl.textContent = '$0';
     return;
   }
@@ -438,19 +382,10 @@ function updateCart() {
     var item = cart[i];
     var sub = item.p * item.q;
     totPrice += sub;
-    html += '<div class="cart-item"><span class="cart-item-badge ' + item.t + '">' + item.t + '</span><div class="cart-item-info"><div class="cart-item-name">' + item.n + '</div><div class="cart-item-price">' + fmtP(item.p) + ' x ' + item.q + '</div></div><div class="cart-item-qty"><button class="qty-btn" onclick="changeQty(\'' + item.k + '\',-1)">-</button><span>' + item.q + '</span><button class="qty-btn" onclick="changeQty(\'' + item.k + '\',1)">+</button></div></div>';
+    html += '<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">' + item.n + '</div><div class="cart-item-price">' + fmtP(item.p) + ' x ' + item.q + '</div></div></div>';
   }
   itemsEl.innerHTML = html;
   totalEl.textContent = fmtP(totPrice);
-}
-
-function changeQty(key, d) {
-  var idx = cart.findIndex(i => i.k === key);
-  if(idx !== -1) {
-    cart[idx].q += d;
-    if(cart[idx].q <= 0) cart.splice(idx, 1);
-  }
-  updateCart();
 }
 
 function toggleCart() {
@@ -459,37 +394,62 @@ function toggleCart() {
 }
 
 function sendWhatsApp() {
-  if(!cart.length) return alert('Agrega productos al carrito primero.');
-  var m = '*NUEVO PEDIDO - TATTOO CONCEPT BOGOTÁ*\n===================\n\n';
+  if(!cart.length) return alert('El carrito está vacío.');
+  var m = '*PEDIDO - TATTOO CONCEPT BOGOTÁ*\n===================\n\n';
   var t = 0;
   cart.forEach((i, idx) => {
     var sub = i.p * i.q;
     t += sub;
-    m += (idx+1) + '. *' + i.n + '* [' + i.t.toUpperCase() + ']\n    Cant: ' + i.q + ' | Subtotal: ' + fmtP(sub) + '\n';
+    m += (idx+1) + '. *' + i.n + '*\n    Cant: ' + i.q + ' | Subtotal: ' + fmtP(sub) + '\n';
   });
-  m += '\n===================\n*TOTAL ESTIMADO: ' + fmtP(t) + '*\n\nNombre del Cliente:\nDirección de Envío:\nCiudad:';
+  m += '\n*TOTAL: ' + fmtP(t) + '*\n\nNombre:\nDirección:';
   window.open('https://wa.me/573044298924?text=' + encodeURIComponent(m), '_blank');
 }
 
-// AI Assistant Toggle
 function toggleAI() {
   document.getElementById('aiBox').classList.toggle('open');
 }
 
+// Lógica Inteligente del Asistente Virtual para Escaneo de Stock
 function sendAIMsg() {
   var inp = document.getElementById('aiInput');
-  var txt = inp.value.trim();
-  if(!txt) return;
+  var query = inp.value.trim().toLowerCase();
+  if(!query) return;
+
   var msgs = document.getElementById('aiMessages');
-  msgs.innerHTML += '<div class="msg msg-user">' + txt + '</div>';
+  msgs.innerHTML += '<div class="msg msg-user">' + inp.value + '</div>';
   inp.value = '';
   msgs.scrollTop = msgs.scrollHeight;
+
   setTimeout(() => {
-    var reply = "Procesando consulta... Para ventas directas o confirmación de stock inmediato, te recomendamos hacer tu pedido mediante WhatsApp.";
-    if(txt.toLowerCase().includes('precio') || txt.toLowerCase().includes('mayor')) reply = "Manejamos precios al detal y precios al por mayor (a partir de 10 unidades por referencia). Puedes agregarlos directamente al carrito.";
-    msgs.innerHTML += '<div class="msg msg-bot">' + reply + '</div>';
+    var reply = "";
+    var found = [];
+
+    // Buscar en la base de datos local
+    for(var sec in DB) {
+      for(var brand in DB[sec]) {
+        DB[sec][brand].forEach(prod => {
+          if(prod.n.toLowerCase().includes(query) || prod.s.toLowerCase().includes(query) || brand.toLowerCase().includes(query)) {
+            found.push(prod);
+          }
+        });
+      }
+    }
+
+    if(found.length > 0) {
+      reply = "Sí, tenemos disponibilidad de ese producto. Aquí están los detalles:\n\n";
+      found.slice(0, 3).forEach(p => {
+        reply += "• **" + p.n + "** (SKU: " + p.s + ")\n   Stock: " + p.stock + " unidades | Precio: " + fmtP(p.p) + "\n";
+      });
+    } else if(query.includes('envio') || query.includes('bogota')) {
+      reply = "Hacemos envíos inmediatos en Bogotá y a nivel nacional en Colombia.";
+    } else {
+      reply = "No encontré un producto con ese nombre exacto en el inventario actual. Puedes consultarme por marcas como 'Ilux', 'WJX' o 'Dynamic'.";
+    }
+
+    msgs.innerHTML += '<div class="msg msg-bot">' + reply.replace(/\n/g, '<br>') + '</div>';
     msgs.scrollTop = msgs.scrollHeight;
-  }, 600);
+  }, 500);
 }
 
 window.onload = renderAll;
